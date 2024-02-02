@@ -19,6 +19,9 @@ const HeroSection = () => {
           className="text-[#333] font-[Lato] text-[1.8em] md:text-[calc(1em + 2.4vw)] lg:text-3em font-[900] leading-[1.2]"
           repeat={Infinity}
         />
+        <div>
+            <p>Hey there! I'm Eugene, a passionate developer ready to dive into the world of challenges with boundless energy. No limits, just pure enthusiasm to create amazing things together</p>
+        </div>
       </div>
       {/* Card-box */}
       <div></div>
