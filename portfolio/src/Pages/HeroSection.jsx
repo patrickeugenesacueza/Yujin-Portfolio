@@ -19,7 +19,7 @@ const HeroSection = () => {
           className="text-[#333] font-[Lato] text-[1.2em] md:text-[3em] lg:text-3em font-[900] leading-[1.2]"
           repeat={Infinity}
         />
-        <div className="">
+        <div className="font-[300] text-[1.2em] lg:text-[1.5em]  mt-3 mx-[2em] md:mx-[5em] lg:mx-[10em]">
             <p>Hey there! I'm Eugene, a passionate person ready to dive into the world of challenges with boundless energy. No limits, just pure enthusiasm to create amazing things together</p>
         </div>
       </div>
