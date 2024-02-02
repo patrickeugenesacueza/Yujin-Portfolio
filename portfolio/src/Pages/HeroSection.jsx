@@ -16,14 +16,12 @@ const HeroSection = () => {
           ]}
           wrapper="span"
           speed={50}
-          className="text-[#333] text-[1.8em] md:text-[calc(1em + 2.4vw)] lg:text-3em font-[900] leading-[1.2]"
+          className="text-[#333] font-[Lato] text-[1.8em] md:text-[calc(1em + 2.4vw)] lg:text-3em font-[900] leading-[1.2]"
           repeat={Infinity}
         />
       </div>
       {/* Card-box */}
-      <div>
-
-      </div>
+      <div></div>
     </section>
   );
 };
