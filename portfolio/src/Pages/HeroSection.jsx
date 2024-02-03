@@ -28,7 +28,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* grid box */}
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-10 sm:px-16 md:px-16 lg:px-20 xl:px-32">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-10 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
         <div className="bg-red-900 py-[8em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[10em]">
           01
         </div>
