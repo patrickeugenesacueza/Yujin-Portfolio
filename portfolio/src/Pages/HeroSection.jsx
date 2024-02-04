@@ -1,5 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import Logo from "../assets/frontEndSVG.svg";
 
 const HeroSection = () => {
   return (
@@ -31,9 +32,19 @@ const HeroSection = () => {
       </div>
       {/* grid box */}
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-10 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
-        <div className="bg-[#f9f9f9] py-[8em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[10em]">
-          01
+        <div className="bg-[#f9f9f9] py-[8em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
+          <div className="text-center">
+            <img src={Logo} height={100} width={200} className="mx-auto" />
+            <div className="mt-5">
+              <h1 className="font-[600]">Front-end Development</h1>
+              <p>
+                Responsive websites built for an optimal user experience that
+                achieves your business goals.
+              </p>
+            </div>
+          </div>
         </div>
+
         <div className="bg-[#f9f9f9] py-[8em] sm:py-20 md:py-24 lg:py-24 xl:py-24">
           01
         </div>
