@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 // import image
 import FrontEndLogo from "../assets/frontEndSVG.svg";
 import MobileLogo from "../assets/mobileDevSVG.svg";
+import TechSuppLogo from "../assets/techSupportSVG.svg";
 
 const HeroSection = () => {
   return (
@@ -34,7 +35,8 @@ const HeroSection = () => {
         </div>
       </div>
       {/* grid box */}
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-10 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-10 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">        
+        {/* 1st container */}
         <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
           <div className="text-center">
             <img src={FrontEndLogo} height={80} width={190} className="mx-auto" />
@@ -48,20 +50,32 @@ const HeroSection = () => {
           </div>
         </div>
 
+       {/* 2nd container */}
         <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="text-center">
+          < div className="text-center">
             <img src={MobileLogo} height={80} width={190} className="mx-auto" />
             <div className="mt-5">
               <h1 className="font-[600]">Mobile Application Development</h1>
               <p>
-                Responsive websites built for an optimal user experience that
-                achieves your business goals.
+              Focusing on mobile application development, particularly in Android
+               using the Java programming language and the robust Android Studio IDE.
               </p>
             </div>
           </div>
         </div>
-        <div className="bg-[#f9f9f9] py-[8em] sm:py-20 md:py-24 lg:py-24 xl:py-24">
-          01
+
+        {/* 3rd container */}
+        <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
+          < div className="text-center">
+            <img src={TechSuppLogo} height={80} width={190} className="mx-auto" />
+            <div className="mt-5">
+              <h1 className="font-[600]">IT Tech Support</h1>
+              <p>
+              Efficient tech support services designed to enhance your 
+              digital experience and seamlessly resolve any technical challenges. 
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
