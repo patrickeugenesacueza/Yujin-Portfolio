@@ -40,9 +40,9 @@ const HeroSection = () => {
         <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
           <div className="text-center">
             <img src={FrontEndLogo} height={80} width={190} className="mx-auto" />
-            <div className="mt-5">
+            <div className="mt-5 px-[2em]">
               <h1 className="font-[600]">Front-end Development</h1>
-              <p>
+              <p className="text-left">
                 Responsive websites built for an optimal user experience that
                 achieves your business goals.
               </p>
@@ -52,13 +52,13 @@ const HeroSection = () => {
 
        {/* 2nd container */}
         <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          < div className="text-center">
+          <div className="text-center">
             <img src={MobileLogo} height={80} width={190} className="mx-auto" />
-            <div className="mt-5">
+            <div className="mt-5 px-[2em]">
               <h1 className="font-[600]">Mobile Application Development</h1>
-              <p>
-              Focusing on mobile application development, particularly in Android
-               using the Java programming language and the robust Android Studio IDE.
+              <p className="text-left">
+              Focusing on mobile application development, particularly in Android studio
+
               </p>
             </div>
           </div>
@@ -68,9 +68,9 @@ const HeroSection = () => {
         <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
           < div className="text-center">
             <img src={TechSuppLogo} height={80} width={190} className="mx-auto" />
-            <div className="mt-5">
+            <div className="mt-5 px-[2em]">
               <h1 className="font-[600]">IT Tech Support</h1>
-              <p>
+              <p className="text-left">
               Efficient tech support services designed to enhance your 
               digital experience and seamlessly resolve any technical challenges. 
               </p>
