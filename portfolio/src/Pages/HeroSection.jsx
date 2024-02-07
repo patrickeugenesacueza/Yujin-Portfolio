@@ -38,7 +38,7 @@ const HeroSection = () => {
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-10 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">        
         {/* 1st container */}
         <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="text-center">
+          <div className="flex md:block lg:block xl:block 2xl:block">
             <img src={FrontEndLogo} height={80} width={190} className="mx-auto" />
             <div className="mt-5 px-[2em]">
               <h1 className="font-[600]">Front-end Development</h1>
@@ -52,13 +52,12 @@ const HeroSection = () => {
 
        {/* 2nd container */}
         <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="text-center">
+        <div className="flex md:block lg:block xl:block 2xl:block">
             <img src={MobileLogo} height={80} width={190} className="mx-auto" />
             <div className="mt-5 px-[2em]">
               <h1 className="font-[600]">Mobile Application Development</h1>
               <p className="text-left">
               Focusing on mobile application development, particularly in Android studio
-
               </p>
             </div>
           </div>
@@ -66,7 +65,7 @@ const HeroSection = () => {
 
         {/* 3rd container */}
         <div className="bg-[#f9f9f9] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          < div className="text-center">
+        <div className="flex md:block lg:block xl:block 2xl:block">
             <img src={TechSuppLogo} height={80} width={190} className="mx-auto" />
             <div className="mt-5 px-[2em]">
               <h1 className="font-[600]">IT Tech Support</h1>
