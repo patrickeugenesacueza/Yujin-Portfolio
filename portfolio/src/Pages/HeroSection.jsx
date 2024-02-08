@@ -81,12 +81,17 @@ const HeroSection = () => {
       </div>
        <hr className=" mt-[8em] mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]"/>
       <div className="mt-[2em]">
-          <h2 className="text-center text-[2.5em] font-bold text-[#333]">FEATURED WORK</h2>
-          <div className="h-[60vh] bg-black py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
-            <div className="w-1/2 h-full bg-red-500">
-
+          <h2 className="text-center text-[2.5em] font-[900] text-[#333]">Featured Work</h2>
+          <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
+            <div className="w-1/4 h-full mr-[1.5em]">
+              <div className="w-full bg-[#e5e7eb] h-1/3">
+              </div>
+              <div>
+                <h1 className="text-[2rem] text-[#861f9e]">Clarise's Portfolio</h1>
+                <span className="text-[1.5rem] text-[#333] font-serif">I spearheaded the development of Clarise's portfolio utilizing REACT JS, Tailwind CSS, and EmailJS, alongside various other React packages</span>
+              </div>
             </div>
-            <div className="w-1/2 h-full bg-red-700">
+            <div className="w-3/4 h-full bg-[#e5e7eb]">
 
             </div>
           </div>
