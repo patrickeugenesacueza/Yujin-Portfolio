@@ -8,7 +8,7 @@ import TechSuppLogo from "../assets/techSupportSVG.svg";
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-[80vh] bg-[#fff] pt-[5em]">
+    <section className="w-full h-auto bg-[#fff] pt-[5em]">
       <div className="text-center block">
         <TypeAnimation
           sequence={[
@@ -79,9 +79,17 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-       <hr className=" mt-[8em] px-[1em]"/>
-      <div className="">
-          <h1 className="text-center">FEATURED WORK</h1>
+       <hr className=" mt-[8em] mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]"/>
+      <div className="mt-[2em]">
+          <h2 className="text-center text-[2.5em] font-bold text-[#333]">FEATURED WORK</h2>
+          <div className="h-[60vh] bg-black py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
+            <div className="w-1/2 h-full bg-red-500">
+
+            </div>
+            <div className="w-1/2 h-full bg-red-700">
+
+            </div>
+          </div>
       </div>
     </section>
   );
