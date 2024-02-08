@@ -7,6 +7,7 @@ import MobileLogo from "../assets/mobileDevSVG.svg";
 import TechSuppLogo from "../assets/techSupportSVG.svg";
 import ClrsDekstopSize from "../assets/clrsDekstopSize.png";
 import ClrsMobileSize from "../assets/clrsMobileSize.png";
+import ClrsIcon from "../assets/clrsIcon.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -102,7 +103,9 @@ const HeroSection = () => {
         </h2>
         <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
           <div className="w-1/4 h-full mr-[1.5em]">
-            <div className="w-full bg-[#F3F3F3] h-1/3"></div>
+            <div className="w-full bg-[#F3F3F3] h-1/3 items-center">
+            <img src={ClrsIcon} className="w-1/2 h-full mx-auto"/>
+            </div>
             <div>
             <div className="flex items-center">
               {/* Updated to use the imported icon */}
