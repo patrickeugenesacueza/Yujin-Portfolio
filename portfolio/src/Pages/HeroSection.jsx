@@ -209,6 +209,43 @@ const HeroSection = () => {
           <h2 className="text-center text-[2.5em] font-[900] text-[#333]">
             Testimonials
           </h2>
+
+          <div className="text-center py-10">
+            <div className="flex flex-wrap justify-center gap-8">
+              <div className="max-w-sm bg-white/10 p-8 rounded-xl mix-blend-luminosity">
+                <img src={ClrsIcon} alt="image 1" className="h-20 mx-auto" />
+                <h4 className="uppercase text-xl font-bold">John Doe</h4>
+                <p className="text-sm leading-7 my-3 font-light opacity-50">
+                  SDHSHDSHDHSHD
+                </p>
+                <button className="bg-btn_primary py-2.5 px-8 rounded-full">
+                  Get in Touch
+                </button>
+              </div>
+
+              <div className="max-w-sm bg-white/10 p-8 rounded-xl mix-blend-luminosity">
+                <img src={ClrsIcon} alt="image 1" className="h-20 mx-auto" />
+                <h4 className="uppercase text-xl font-bold">John Doe</h4>
+                <p className="text-sm leading-7 my-3 font-light opacity-50">
+                  SDHSHDSHDHSHD
+                </p>
+                <button className="bg-btn_primary py-2.5 px-8 rounded-full">
+                  Get in Touch
+                </button>
+              </div>
+
+              <div className="max-w-sm bg-white/10 p-8 rounded-xl mix-blend-luminosity">
+                <img src={ClrsIcon} alt="image 1" className="h-20 mx-auto" />
+                <h4 className="uppercase text-xl font-bold">John Doe</h4>
+                <p className="text-sm leading-7 my-3 font-light opacity-50">
+                  SDHSHDSHDHSHD
+                </p>
+                <button className="bg-btn_primary py-2.5 px-8 rounded-full">
+                  Get in Touch
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
