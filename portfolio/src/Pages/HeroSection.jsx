@@ -9,6 +9,9 @@ import ClrsDekstopSize from "../assets/clrsDekstopSize.png";
 import ClrsMobileSize from "../assets/clrsMobileSize.png";
 import ClrsIcon from "../assets/clrsIcon.png";
 import JProgLogo from "../assets/jProgLogo.png";
+import JProgFirstPicture from "../assets/jProgFirstPicture.jpg";
+import JProgSecondPicture from "../assets/jProgSecondPicture.jpg";
+import JProgThirdPicture from "../assets/jProgThirdPicture.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -153,17 +156,18 @@ const HeroSection = () => {
               <span className="text-[1.5rem] text-[#333] font-serif">
                 I developed the jProg e-Learning platform using Android Studio
                 and Java, incorporating Firebase as the database backend.
-                Throughout the development process, I applied fundamental Java
-                concepts such as Object-Oriented Programming.
               </span>
             </div>
           </div>
           <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
-            <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
-              <img src={ClrsDekstopSize} className="h-full w-full" />
+            <div className="h-full w-1/3 mx-[.5em] bg-red-200">
+              <img src={JProgFirstPicture} className="h-full w-full" />
             </div>
-            <div className="h-full w-1/3 bg-red-200">
-              <img src={ClrsMobileSize} className="h-full w-full" />
+            <div className="h-full w-1/3  mx-[.5em] bg-red-200">
+              <img src={JProgSecondPicture} className="h-full w-full" />
+            </div>
+            <div className="h-full w-1/3 mx-[.5em]  bg-red-200">
+              <img src={JProgThirdPicture} className="h-full w-full" />
             </div>
           </div>
         </div>
@@ -183,7 +187,10 @@ const HeroSection = () => {
                 <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
               </div>
               <span className="text-[1.5rem] text-[#333] font-serif">
-              Our capstone thesis, TUPCare, entails the development of a monitoring web application designed to oversee temperature scanners, face mask dispensers, and alcohol dispensers within TUP-Manila
+                Our capstone thesis, TUPCare, entails the development of a
+                monitoring web application designed to oversee temperature
+                scanners, face mask dispensers, and alcohol dispensers within
+                TUP-Manila
               </span>
             </div>
           </div>
@@ -195,6 +202,13 @@ const HeroSection = () => {
               <img src={ClrsMobileSize} className="h-full w-full" />
             </div>
           </div>
+        </div>
+
+        <hr className=" mt-[8em] mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]" />
+        <div className="mt-[2em]">
+          <h2 className="text-center text-[2.5em] font-[900] text-[#333]">
+            Testimonials
+          </h2>
         </div>
       </div>
     </section>
