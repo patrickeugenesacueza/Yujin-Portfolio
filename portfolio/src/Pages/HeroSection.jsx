@@ -180,13 +180,10 @@ const HeroSection = () => {
                   icon={faChevronRight}
                   className="mr-2 text-[#861f9e]"
                 />
-                <h1 className="text-[2rem] text-[#861f9e]">jProg e-Learning</h1>
+                <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
               </div>
               <span className="text-[1.5rem] text-[#333] font-serif">
-                I developed the jProg e-Learning platform using Android Studio
-                and Java, incorporating Firebase as the database backend.
-                Throughout the development process, I applied fundamental Java
-                concepts such as Object-Oriented Programming.
+              Our capstone thesis, TUPCare, entails the development of a monitoring web application designed to oversee temperature scanners, face mask dispensers, and alcohol dispensers within TUP-Manila
               </span>
             </div>
           </div>
