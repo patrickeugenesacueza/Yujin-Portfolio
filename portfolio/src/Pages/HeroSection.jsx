@@ -1,5 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+// import testimonial json
+import data from "../data/TestimonialFeedback.json";
 
 // import image
 import FrontEndLogo from "../assets/frontEndSVG.svg";
@@ -12,7 +14,6 @@ import JProgLogo from "../assets/jProgLogo.png";
 import JProgFirstPicture from "../assets/jProgFirstPicture.jpg";
 import JProgSecondPicture from "../assets/jProgSecondPicture.jpg";
 import JProgThirdPicture from "../assets/jProgThirdPicture.jpg";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -212,38 +213,27 @@ const HeroSection = () => {
 
           <div className="text-center py-10">
             <div className="flex flex-wrap justify-center gap-8">
-              <div className="max-w-sm bg-white/10 p-8 rounded-xl mix-blend-luminosity">
-                <img src={ClrsIcon} alt="image 1" className="h-20 mx-auto" />
-                <h4 className="uppercase text-xl font-bold">John Doe</h4>
-                <p className="text-sm leading-7 my-3 font-light opacity-50">
-                  SDHSHDSHDHSHD
-                </p>
-                <button className="bg-btn_primary py-2.5 px-8 rounded-full">
-                  Get in Touch
-                </button>
-              </div>
-
-              <div className="max-w-sm bg-white/10 p-8 rounded-xl mix-blend-luminosity">
-                <img src={ClrsIcon} alt="image 1" className="h-20 mx-auto" />
-                <h4 className="uppercase text-xl font-bold">John Doe</h4>
-                <p className="text-sm leading-7 my-3 font-light opacity-50">
-                  SDHSHDSHDHSHD
-                </p>
-                <button className="bg-btn_primary py-2.5 px-8 rounded-full">
-                  Get in Touch
-                </button>
-              </div>
-
-              <div className="max-w-sm bg-white/10 p-8 rounded-xl mix-blend-luminosity">
-                <img src={ClrsIcon} alt="image 1" className="h-20 mx-auto" />
-                <h4 className="uppercase text-xl font-bold">John Doe</h4>
-                <p className="text-sm leading-7 my-3 font-light opacity-50">
-                  SDHSHDSHDHSHD
-                </p>
-                <button className="bg-btn_primary py-2.5 px-8 rounded-full">
-                  Get in Touch
-                </button>
-              </div>
+              {data.map((item, index) => (
+                <div
+                  key={index}
+                  className="max-w-sm bg-white/10 p-8 rounded-xl mix-blend-luminosity"
+                >
+                  <img
+                    src={
+                      item.name === "Clarise Ann Duque" ? ClrsIcon : ClrsIcon
+                    }
+                    alt={`image ${index}`}
+                    className="h-20 mx-auto"
+                  />
+                  <h4 className="uppercase text-xl font-bold">{item.name}</h4>
+                  <p className="text-sm leading-7 my-3 font-light opacity-50">
+                    {item.description}
+                  </p>
+                  <button className="bg-btn_primary py-2.5 px-8 rounded-full">
+                    Get in Touch
+                  </button>
+                </div>
+              ))}
             </div>
           </div>
         </div>
