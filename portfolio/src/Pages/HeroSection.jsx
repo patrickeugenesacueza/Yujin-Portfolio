@@ -51,17 +51,17 @@ const HeroSection = () => {
         </div>
       </div>
       {/* grid box */}
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-10 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-4 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
         {/* 1st container */}
-        <div className="bg-[#F3F3F3] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="flex text-left md:block md:text-center lg:block lg:text-center xl:block xl:text-center 2xl:block 2xl:text-center">
+        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+          <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img
               src={FrontEndLogo}
               height={80}
               width={190}
               className="mx-auto"
             />
-            <div className="mt-5 px-[2em]">
+            <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">Front-end Development</h1>
               <p className="text-left">
                 Responsive websites built for an optimal user experience that
@@ -72,10 +72,10 @@ const HeroSection = () => {
         </div>
 
         {/* 2nd container */}
-        <div className="bg-[#F3F3F3] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="flex text-left md:block md:text-center lg:block lg:text-center xl:block xl:text-center 2xl:block 2xl:text-center">
+        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+          <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img src={MobileLogo} height={80} width={190} className="mx-auto" />
-            <div className="mt-5 px-[2em]">
+            <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">
                 Mobile Application Development
               </h1>
@@ -88,15 +88,15 @@ const HeroSection = () => {
         </div>
 
         {/* 3rd container */}
-        <div className="bg-[#F3F3F3] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="flex text-left md:block md:text-center lg:block lg:text-center xl:block xl:text-center 2xl:block 2xl:text-center">
+        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+          <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img
               src={TechSuppLogo}
               height={80}
               width={190}
               className="mx-auto"
             />
-            <div className="mt-5 px-[2em]">
+            <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">IT Tech Support</h1>
               <p className="text-left">
                 Efficient tech support services designed to enhance your digital
@@ -106,6 +106,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
       <hr className=" mt-[8em] mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]" />
       <div className="mt-[2em]">
         <h2 className="text-center text-[2.5em] font-[900] text-[#333]">
@@ -234,7 +235,9 @@ const HeroSection = () => {
                     alt={`image ${index}`}
                     className="h-20 mx-auto bg-red-600 rounded-full "
                   />
-                  <h4 className="uppercase text-xl font-bold mt-2">{item.name}</h4>
+                  <h4 className="uppercase text-xl font-bold mt-2">
+                    {item.name}
+                  </h4>
                   <p className="text-md leading-7 my-3 font-light">
                     {item.description}
                   </p>
@@ -244,9 +247,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </section>
-
   );
 };
 
