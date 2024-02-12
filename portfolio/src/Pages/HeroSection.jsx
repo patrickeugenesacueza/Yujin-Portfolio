@@ -14,8 +14,13 @@ import JProgLogo from "../assets/jProgLogo.png";
 import JProgFirstPicture from "../assets/jProgFirstPicture.jpg";
 import JProgSecondPicture from "../assets/jProgSecondPicture.jpg";
 import JProgThirdPicture from "../assets/jProgThirdPicture.jpg";
+import TestimonialClarise from "../assets/testimonialClarise.jpg";
+import TestimonialCocoy from "../assets/testimonialCocoy.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+import Footer from "../Components/Footer.jsx";
 
 const HeroSection = () => {
   return (
@@ -123,7 +128,7 @@ const HeroSection = () => {
                   Clarise's Portfolio
                 </h1>
               </div>
-              <span className="text-[1.5rem] text-[#333] font-serif">
+              <span className="text-[1.5rem] text-[#333] font-light">
                 I spearheaded the development of Clarise's portfolio utilizing
                 React JS, Tailwind CSS, and EmailJS, alongside various other
                 React packages
@@ -154,7 +159,7 @@ const HeroSection = () => {
                 />
                 <h1 className="text-[2rem] text-[#861f9e]">jProg e-Learning</h1>
               </div>
-              <span className="text-[1.5rem] text-[#333] font-serif">
+              <span className="text-[1.5rem] text-[#333] font-light">
                 I developed the jProg e-Learning platform using Android Studio
                 and Java, incorporating Firebase as the database backend.
               </span>
@@ -187,7 +192,7 @@ const HeroSection = () => {
                 />
                 <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
               </div>
-              <span className="text-[1.5rem] text-[#333] font-serif">
+              <span className="text-[1.5rem] text-[#333] font-light">
                 Our capstone thesis, TUPCare, entails the development of a
                 monitoring web application designed to oversee temperature
                 scanners, face mask dispensers, and alcohol dispensers within
@@ -216,17 +221,21 @@ const HeroSection = () => {
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="max-w-sm bg-red-100 p-8 rounded-xl mix-blend-luminosity"
+                  className="max-w-sm p-8 rounded-xl bg-[#F3F3F3]"
                 >
                   <img
                     src={
-                      item.name === "Clarise Ann Duque" ? ClrsIcon : ClrsIcon
+                      item.name === "Clarise Ann Duque"
+                        ? TestimonialClarise
+                        : item.name === "Cocoy Avila"
+                        ? TestimonialCocoy
+                        : TestimonialClarise
                     }
                     alt={`image ${index}`}
-                    className="h-20 mx-auto"
+                    className="h-20 mx-auto bg-red-600 rounded-full "
                   />
-                  <h4 className="uppercase text-xl font-bold">{item.name}</h4>
-                  <p className="text-sm leading-7 my-3 font-light opacity-50">
+                  <h4 className="uppercase text-xl font-bold mt-2">{item.name}</h4>
+                  <p className="text-md leading-7 my-3 font-light">
                     {item.description}
                   </p>
                 </div>
@@ -235,7 +244,9 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
+
   );
 };
 
