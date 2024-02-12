@@ -14,8 +14,13 @@ import JProgLogo from "../assets/jProgLogo.png";
 import JProgFirstPicture from "../assets/jProgFirstPicture.jpg";
 import JProgSecondPicture from "../assets/jProgSecondPicture.jpg";
 import JProgThirdPicture from "../assets/jProgThirdPicture.jpg";
+import TestimonialClarise from "../assets/testimonialClarise.jpg";
+import TestimonialCocoy from "../assets/testimonialCocoy.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+import Footer from "../Components/Footer.jsx";
 
 const HeroSection = () => {
   return (
@@ -46,17 +51,17 @@ const HeroSection = () => {
         </div>
       </div>
       {/* grid box */}
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-10 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-4 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
         {/* 1st container */}
-        <div className="bg-[#F3F3F3] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="flex text-left md:block md:text-center lg:block lg:text-center xl:block xl:text-center 2xl:block 2xl:text-center">
+        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+          <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img
               src={FrontEndLogo}
               height={80}
               width={190}
               className="mx-auto"
             />
-            <div className="mt-5 px-[2em]">
+            <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">Front-end Development</h1>
               <p className="text-left">
                 Responsive websites built for an optimal user experience that
@@ -67,10 +72,10 @@ const HeroSection = () => {
         </div>
 
         {/* 2nd container */}
-        <div className="bg-[#F3F3F3] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="flex text-left md:block md:text-center lg:block lg:text-center xl:block xl:text-center 2xl:block 2xl:text-center">
+        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+          <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img src={MobileLogo} height={80} width={190} className="mx-auto" />
-            <div className="mt-5 px-[2em]">
+            <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">
                 Mobile Application Development
               </h1>
@@ -83,15 +88,15 @@ const HeroSection = () => {
         </div>
 
         {/* 3rd container */}
-        <div className="bg-[#F3F3F3] py-[2em] sm:py-[8em] md:py-[10em] lg:py-[10em] xl:py-[2em] flex items-center justify-center text-center">
-          <div className="flex text-left md:block md:text-center lg:block lg:text-center xl:block xl:text-center 2xl:block 2xl:text-center">
+        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+          <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img
               src={TechSuppLogo}
               height={80}
               width={190}
               className="mx-auto"
             />
-            <div className="mt-5 px-[2em]">
+            <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">IT Tech Support</h1>
               <p className="text-left">
                 Efficient tech support services designed to enhance your digital
@@ -101,6 +106,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
       <hr className=" mt-[8em] mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]" />
       <div className="mt-[2em]">
         <h2 className="text-center text-[2.5em] font-[900] text-[#333]">
@@ -123,7 +129,7 @@ const HeroSection = () => {
                   Clarise's Portfolio
                 </h1>
               </div>
-              <span className="text-[1.5rem] text-[#333] font-serif">
+              <span className="text-[1.5rem] text-[#333] font-light">
                 I spearheaded the development of Clarise's portfolio utilizing
                 React JS, Tailwind CSS, and EmailJS, alongside various other
                 React packages
@@ -154,7 +160,7 @@ const HeroSection = () => {
                 />
                 <h1 className="text-[2rem] text-[#861f9e]">jProg e-Learning</h1>
               </div>
-              <span className="text-[1.5rem] text-[#333] font-serif">
+              <span className="text-[1.5rem] text-[#333] font-light">
                 I developed the jProg e-Learning platform using Android Studio
                 and Java, incorporating Firebase as the database backend.
               </span>
@@ -187,7 +193,7 @@ const HeroSection = () => {
                 />
                 <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
               </div>
-              <span className="text-[1.5rem] text-[#333] font-serif">
+              <span className="text-[1.5rem] text-[#333] font-light">
                 Our capstone thesis, TUPCare, entails the development of a
                 monitoring web application designed to oversee temperature
                 scanners, face mask dispensers, and alcohol dispensers within
@@ -216,17 +222,23 @@ const HeroSection = () => {
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="max-w-sm bg-red-100 p-8 rounded-xl mix-blend-luminosity"
+                  className="max-w-sm p-8 rounded-xl bg-[#F3F3F3]"
                 >
                   <img
                     src={
-                      item.name === "Clarise Ann Duque" ? ClrsIcon : ClrsIcon
+                      item.name === "Clarise Ann Duque"
+                        ? TestimonialClarise
+                        : item.name === "Cocoy Avila"
+                        ? TestimonialCocoy
+                        : TestimonialClarise
                     }
                     alt={`image ${index}`}
-                    className="h-20 mx-auto"
+                    className="h-20 mx-auto bg-red-600 rounded-full "
                   />
-                  <h4 className="uppercase text-xl font-bold">{item.name}</h4>
-                  <p className="text-sm leading-7 my-3 font-light opacity-50">
+                  <h4 className="uppercase text-xl font-bold mt-2">
+                    {item.name}
+                  </h4>
+                  <p className="text-md leading-7 my-3 font-light">
                     {item.description}
                   </p>
                 </div>
@@ -235,6 +247,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };
