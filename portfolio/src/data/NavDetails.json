@@ -1,0 +1,18 @@
+[
+    {
+        "nav":"ABOUT",
+        "description": "Learn about Ian's skills and workflow"
+    },
+    {
+        "nav":"PORTFOLIO",
+        "description": "View Ian's previous work"
+    },
+    {
+        "nav":"EXPERIENCE",
+        "description": "View Ian's previous work"
+    },
+    {
+        "nav":"GET IN TOUCH",
+        "description": "Send an Email"
+    }
+]
