@@ -212,11 +212,11 @@ const HeroSection = () => {
           </h2>
 
           <div className="text-center py-10">
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-wrap justify-center gap-8 ">
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="max-w-sm bg-white/10 p-8 rounded-xl mix-blend-luminosity"
+                  className="max-w-sm bg-red-100 p-8 rounded-xl mix-blend-luminosity"
                 >
                   <img
                     src={
@@ -229,9 +229,6 @@ const HeroSection = () => {
                   <p className="text-sm leading-7 my-3 font-light opacity-50">
                     {item.description}
                   </p>
-                  <button className="bg-btn_primary py-2.5 px-8 rounded-full">
-                    Get in Touch
-                  </button>
                 </div>
               ))}
             </div>
