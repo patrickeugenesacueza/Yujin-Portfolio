@@ -6,6 +6,7 @@ import SocialMediaDetails from "../data/SocialMedia.json";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faSquareFacebook, faSquareGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -41,13 +42,13 @@ export default function Footer() {
               <FontAwesomeIcon
                 icon={
                   item.media === "Facebook"
-                    ? faChevronRight
+                    ? faSquareFacebook
                     : item.media === "GitHub"
-                    ? faChevronRight
-                    : faChevronRight
+                    ? faSquareGithub
+                    : faLinkedinIn
                 }
                 alt={`image ${index}`}
-                className="h-[2vh] w-[2vh]"
+                className="h-[5vh] w-[5vh]"
               />
               <h4 className="uppercase text-xl font-bold mt-2">{item.media}</h4>
               <p className="text-md leading-7 my-3 font-light">
