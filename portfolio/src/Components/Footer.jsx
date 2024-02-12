@@ -1,6 +1,9 @@
 import React from "react";
 import TestimonialClarise from "../assets/testimonialClarise.jpg";
 
+import NavDetails from "../data/NavDetails.json";
+import SocialMediaDetails from "../data/SocialMedia.json";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,21 +25,37 @@ export default function Footer() {
               </p>
             </div>
           </div>
-
           <div className="mt-6">
             <h1>Aspiring Successful IT </h1>
             <div className="flex items-center cursor-pointer">
               <p className="font-bold text-[1em]">
                 AVAILABLE APRIL 2024. HIRE NOW
               </p>
-              <FontAwesomeIcon
-                icon={faChevronRight}
-                className="ml-2 "
-              />
+              <FontAwesomeIcon icon={faChevronRight} className="ml-2 " />
             </div>
           </div>
         </div>
-        <div className=" bg-red-800  h-1/2 md:h-full lg:h-full xl:h-full 2xl:h-full w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4"></div>
+        <div className=" bg-red-800  h-1/2 md:h-full lg:h-full xl:h-full 2xl:h-full w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4">
+          {SocialMediaDetails.map((item, index) => (
+            <div>
+              <FontAwesomeIcon
+                icon={
+                  item.media === "Facebook"
+                    ? faChevronRight
+                    : item.media === "GitHub"
+                    ? faChevronRight
+                    : faChevronRight
+                }
+                alt={`image ${index}`}
+                className="h-[2vh] w-[2vh]"
+              />
+              <h4 className="uppercase text-xl font-bold mt-2">{item.media}</h4>
+              <p className="text-md leading-7 my-3 font-light">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
         <div className=" bg-red-200 h-full w-1/4 hidden md:block"></div>
       </div>
     </>
