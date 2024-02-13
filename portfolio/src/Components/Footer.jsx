@@ -15,14 +15,14 @@ import Link from "./Link.jsx";
 export default function Footer() {
   return (
     <>
-      <div className="w-full h-[80vh] md:h-[60vh] bg-[#282424] md:flex lg:flex xl:flex 2xl:flex mt-[2em] p-[2em] text-[#fff]">
+      <div className="w-full h-[80vh] md:h-[50vh] bg-[#282424] md:flex lg:flex xl:flex 2xl:flex mt-[2em] p-[2em] text-[#fff]">
         <div className="h-1/2 md:h-full lg:h-full xl:h-full 2xl:h-full w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
           <div className="flex">
             <div className="w-[22h] h-full mr-3">
               <img src={YujinFormal} className="w-[20vh] h-[20vh]" />
             </div>
             <div className="w-[78vh] h-full">
-              <p className="text-left font-light text-[1.2rem]">
+              <p className="text-sm md:text-lg font-light text-[1.2rem]">
                 I am an aspiring IT professional with a passion for success and
                 a drive to excel. Leveraging my background in freelance software
                 development and IT tech support, I am equipped with a diverse
@@ -33,7 +33,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="mt-6">
+          <div className="my-6">
             <h1>Aspiring Successful IT </h1>
             <div className="flex items-center cursor-pointer">
               <p className="font-bold text-[1em]">
