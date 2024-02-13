@@ -1,4 +1,6 @@
 import React from "react";
+
+import YujinFormal from "../assets/YujinFormal.jpg";
 import TestimonialClarise from "../assets/testimonialClarise.jpg";
 import SocialMediaDetails from "../data/SocialMedia.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,14 +19,17 @@ export default function Footer() {
         <div className="h-1/2 md:h-full lg:h-full xl:h-full 2xl:h-full w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
           <div className="flex">
             <div className="w-[22h] h-full mr-3">
-              <img src={TestimonialClarise} className="w-[20vh] h-[20vh]" />
+              <img src={YujinFormal} className="w-[20vh] h-[20vh]" />
             </div>
             <div className="w-[78vh] h-full">
               <p className="text-left font-light text-[1.2rem]">
-                I am a Front-end Developer with 12 years commercial experience,
-                author of CSS3 Foundations, and graduate of Internet Technology.
-                I create successful websites that are fast, easy to use, and
-                built with best practices.
+                I am an aspiring IT professional with a passion for success and
+                a drive to excel. Leveraging my background in freelance software
+                development and IT tech support, I am equipped with a diverse
+                skill set to tackle challenges in the ever-evolving tech
+                landscape. With a commitment to delivering top-notch solutions
+                and providing exceptional support, I aim to carve a path of
+                success in the IT industry
               </p>
             </div>
           </div>
