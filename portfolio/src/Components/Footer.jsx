@@ -71,7 +71,39 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="bg-red-200 h-full w-1/4 hidden md:block"></div>
+        <div className=" h-full w-1/4 hidden md:block text-left md:text-left md:px-[2em]">
+          {SocialMediaDetails.map((item, index) => (
+            <div key={index} className="">
+              <Link
+                url={
+                  item.media === "Facebook"
+                    ? "https://www.facebook.com/patrickeugene.sacueza"
+                    : item.media === "GitHub"
+                    ? "https://github.com/patrickeugenesacueza"
+                    : "https://www.linkedin.com/in/patrick-eugene-sacueza-18633826a/"
+                }
+              >
+                <div className="flex justify-start md:justify-start">
+                  <FontAwesomeIcon
+                    icon={
+                      item.media === "Facebook"
+                        ? faSquareFacebook
+                        : item.media === "GitHub"
+                        ? faSquareGithub
+                        : faLinkedinIn
+                    }
+                    alt={`image ${index}`}
+                    className="h-[3vh] w-[3vh] mr-[1em] mt-1 "
+                  />
+                  <h4 className="uppercase text-xl font-bold ">{item.media}</h4>
+                </div>
+              </Link>
+              <p className="text-md leading-7 my-3 font-light">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
