@@ -11,9 +11,9 @@ import ClrsDekstopSize from "../assets/clrsDekstopSize.png";
 import ClrsMobileSize from "../assets/clrsMobileSize.png";
 import ClrsIcon from "../assets/clrsIcon.png";
 import JProgLogo from "../assets/jProgLogo.png";
-import JProgFirstPicture from "../assets/jProgFirstPicture.jpg";
-import JProgSecondPicture from "../assets/jProgSecondPicture.jpg";
-import JProgThirdPicture from "../assets/jProgThirdPicture.jpg";
+import JProgFirstPicture from "../assets/JE1.png";
+import JProgSecondPicture from "../assets/JE2.png";
+import JProgThirdPicture from "../assets/JE3.png";
 import TestimonialClarise from "../assets/testimonialClarise.jpg";
 import TestimonialCocoy from "../assets/testimonialCocoy.jpg";
 
