@@ -1,37 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-const Link = ({ url }) => {
-
+const Link = ({ url, children }) => {
   return (
-    <div className="mt-3 relative">
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="relative block"
-        style={{ overflow: "" }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <IonIcon name={icon} size={iconSize} style={iconStyle} />
-      </a>
-    </div>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
   );
 };
 
 Link.propTypes = {
   url: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
-  iconSize: PropTypes.string.isRequired,
-  iconColor: PropTypes.string, // Add iconColor prop
-  hoverColor: PropTypes.string, // Add hoverColor prop
-};
-
-Link.defaultProps = {
-  iconSize: "medium",
-  iconColor: "#9b6c9a", // Set the custom color if not provided
-  hoverColor: "#b37eb5", // Set the hover color if not provided
+  children: PropTypes.node.isRequired,
 };
 
 export default Link;
