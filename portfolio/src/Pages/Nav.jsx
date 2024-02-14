@@ -19,10 +19,10 @@ const Nav = () => {
             <Link to="About">About</Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="Service">Projects</Link>
+            <Link to="Service">Service</Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="Projects">Experience</Link>
+            <Link to="Projects">Projects</Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             <Link to="Contacts">Contacts</Link>

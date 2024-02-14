@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Portfolio() {
+export default function Projects() {
   return (
     <>
       <div className="w-full h-[100vh] bg-red-500">
