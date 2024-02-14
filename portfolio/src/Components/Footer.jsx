@@ -13,7 +13,7 @@ import {
 import SocialMediaDetails from "../data/SocialMedia.json";
 import NavDetails from "../data/NavDetails.json";
 
-// import About from "../Pages/About";
+import About from "../Pages/About";
 // import Contact from "../Pages/Contact";
 // import Experience from "../Pages/Experience";
 // import Portfolio from "../Pages/Portfolio";
@@ -86,7 +86,7 @@ export default function Footer() {
           {NavDetails.map((item, index) => (
             <div key={index}>
               {/* Use Link component instead of h1 */}
-              <Link to={`/pages/${item.nav.toLowerCase()}`}>
+              <Link to={`/Pages/${item.nav.toLowerCase()}`}>
                 <h1 className="cursor-pointer text-xl font-bold">{item.nav}</h1>
               </Link>
               <p className="text-md leading-7 my-3 font-light">
