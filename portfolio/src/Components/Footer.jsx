@@ -2,7 +2,6 @@ import React from "react";
 
 import YujinFormal from "../assets/YujinFormal.jpg";
 import TestimonialClarise from "../assets/testimonialClarise.jpg";
-import SocialMediaDetails from "../data/SocialMedia.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -11,6 +10,16 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "./Link.jsx";
+
+//Social Media Details
+import SocialMediaDetails from "../data/SocialMedia.json";
+
+//Navigation Details
+import NavDetails from "../data/NavDetails.json";
+
+//Router
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 export default function Footer() {
   return (
@@ -76,33 +85,10 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className=" h-full w-1/4 hidden md:block text-left md:text-left md:px-[2em]">
-          {SocialMediaDetails.map((item, index) => (
-            <div key={index} className="">
-              <Link
-                url={
-                  item.media === "Facebook"
-                    ? "https://www.facebook.com/patrickeugene.sacueza"
-                    : item.media === "GitHub"
-                    ? "https://github.com/patrickeugenesacueza"
-                    : "https://www.linkedin.com/in/patrick-eugene-sacueza-18633826a/"
-                }
-              >
-                <div className="flex justify-start md:justify-start">
-                  <FontAwesomeIcon
-                    icon={
-                      item.media === "Facebook"
-                        ? faSquareFacebook
-                        : item.media === "GitHub"
-                        ? faSquareGithub
-                        : faLinkedinIn
-                    }
-                    alt={`image ${index}`}
-                    className="h-[3vh] w-[3vh] mr-[1em] mt-1 "
-                  />
-                  <h4 className="uppercase text-xl font-bold ">{item.media}</h4>
-                </div>
-              </Link>
+        <div className="h-full w-1/4 hidden md:block text-left md:text-left md:px-[2em]">
+          {NavDetails.map((item, index) => (
+            <div>
+              <h1 className="cursor-pointer text-xl font-bold">{item.nav}</h1>
               <p className="text-md leading-7 my-3 font-light">
                 {item.description}
               </p>
