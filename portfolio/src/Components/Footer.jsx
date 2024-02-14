@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import YujinFormal from "../assets/YujinFormal.jpg";
 import TestimonialClarise from "../assets/testimonialClarise.jpg";
@@ -9,17 +10,13 @@ import {
   faSquareGithub,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import Link from "./Link.jsx";
-
-//Social Media Details
 import SocialMediaDetails from "../data/SocialMedia.json";
-
-//Navigation Details
 import NavDetails from "../data/NavDetails.json";
 
-//Router
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+// import About from "../Pages/About";
+// import Contact from "../Pages/Contact";
+// import Experience from "../Pages/Experience";
+// import Portfolio from "../Pages/Portfolio";
 
 export default function Footer() {
   return (
@@ -28,7 +25,7 @@ export default function Footer() {
         <div className="h-1/2 md:h-full lg:h-full xl:h-full 2xl:h-full w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
           <div className="flex">
             <div className="w-[22h] h-full mr-3">
-              <img src={YujinFormal} className="w-[20vh] h-[20vh]" />
+              <img src={YujinFormal} className="w-[20vh] h-[20vh]" alt="Yujin Formal" />
             </div>
             <div className="w-[78vh] h-full">
               <p className="text-sm md:text-lg font-light text-[1.2rem]">
@@ -54,9 +51,9 @@ export default function Footer() {
         </div>
         <div className="h-[40vh] md:h-full lg:h-full xl:h-full 2xl:h-full w-full md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4 text-left md:text-right md:px-[2em]">
           {SocialMediaDetails.map((item, index) => (
-            <div key={index} className="">
+            <div key={index}>
               <Link
-                url={
+                to={
                   item.media === "Facebook"
                     ? "https://www.facebook.com/patrickeugene.sacueza"
                     : item.media === "GitHub"
@@ -87,8 +84,11 @@ export default function Footer() {
         </div>
         <div className="h-full w-1/4 hidden md:block text-left md:text-left md:px-[2em]">
           {NavDetails.map((item, index) => (
-            <div>
-              <h1 className="cursor-pointer text-xl font-bold">{item.nav}</h1>
+            <div key={index}>
+              {/* Use Link component instead of h1 */}
+              <Link to={`/pages/${item.nav.toLowerCase()}`}>
+                <h1 className="cursor-pointer text-xl font-bold">{item.nav}</h1>
+              </Link>
               <p className="text-md leading-7 my-3 font-light">
                 {item.description}
               </p>
