@@ -3,6 +3,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import HeroSection from "./Pages/HeroSection";
 import Nav from "./Pages/Nav";
+import About from "./Pages/About";
 
 const App = () => {
   return (
@@ -10,6 +11,8 @@ const App = () => {
       <Nav />
       <Routes>
         <Route exact path="/" element={<HeroSection />} />
+        <Route exact path="/About" element={<About/>} />
+
       </Routes>
     </div>
   );
