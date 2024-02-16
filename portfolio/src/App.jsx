@@ -4,6 +4,9 @@ import { Route, Routes } from "react-router-dom";
 import HeroSection from "./Pages/HeroSection";
 import Nav from "./Pages/Nav";
 import About from "./Pages/About";
+import Project from "./Pages/Projects";
+import Experience from "./Pages/Experience";
+import Contacts from "./Pages/Contacts";
 
 const App = () => {
   return (
@@ -12,6 +15,9 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<HeroSection />} />
         <Route exact path="/About" element={<About/>} />
+        <Route exact path="/Project" element={<Project/>} />
+        <Route exact path="/Experience" element={<Experience/>}/>
+        <Route exact path="/Contacts" element={<Contacts/>}/>
 
       </Routes>
     </div>
