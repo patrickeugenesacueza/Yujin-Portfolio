@@ -4,6 +4,9 @@ import { Route, Routes } from "react-router-dom";
 import HeroSection from "./Pages/HeroSection";
 import Nav from "./Pages/Nav";
 import About from "./Pages/About";
+import Project from "./Pages/Projects";
+import Experience from "./Pages/Experience";
+import Contacts from "./Pages/Contacts";
 
 const App = () => {
   return (
