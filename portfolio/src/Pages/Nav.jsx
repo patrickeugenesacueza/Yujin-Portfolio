@@ -19,10 +19,10 @@ const Nav = () => {
             <Link to="/About" element={<About/>}>About</Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="/Service">Projects</Link>
+            <Link to="/Projects">Projects</Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="/Projects">Experience</Link>
+            <Link to="/Experience">Experience</Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             <Link to="/Contacts">Contacts</Link>
@@ -48,10 +48,10 @@ const Nav = () => {
             <Link to="/About" element={<About/>}>About</Link>
               </li>
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
-                <Link to="/Service">Projects</Link>
+                <Link to="/Projects">Projects</Link>
               </li>
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
-                <Link to="/Projects">Experience</Link>
+                <Link to="/Experience">Experience</Link>
               </li>
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
                 <Link to="/Contacts">Contacts</Link>
