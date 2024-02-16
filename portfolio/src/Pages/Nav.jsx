@@ -4,7 +4,6 @@ import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import Logo from "../assets/Logo.svg";
 
-
 const Nav = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);

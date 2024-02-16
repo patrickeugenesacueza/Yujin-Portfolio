@@ -1,11 +1,11 @@
-// index.js or your entry file
+// main.jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom'; // Importing BrowserRouter
 import App from './App';
 
 ReactDOM.render(
-  <Router>
+  <Router> {/* Use BrowserRouter here */}
     <App />
   </Router>,
   document.getElementById('root')
