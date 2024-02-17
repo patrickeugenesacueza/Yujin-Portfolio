@@ -15,34 +15,34 @@ export default function About() {
             <img src={PatrickImage} className="rounded-full" />
           </div>
           <div className="w-full h-full">
-            <h1 className="text-center mt-5 font-[Lato] font-bold text-[1em] md:text-[2em]">
+            <h1 className="text-center mt-5 font-[Lato] font-bold text-[1em] md:text-[2em] lg:text-[2em]">
               SHORT BIOGRAPHY
             </h1>
             <div className="text-justify w-full lg:w-1/2 h-full mx-auto px-[1em]">
-              <h3 className="text-justify mt-5 font-[Lato] font-[200] text-[1em] md:text-[1.5em] text-[#333]">
+              <h3 className="text-justify mt-5 font-[Lato] font-[200] text-[1em] md:text-[1.5em] lg:text-[1.5em] text-[#333]">
                 Born in 2000. Raised in a small town in Philippines. Been hard
                 at work since 2019
               </h3>
-              <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] text-[#333]">
+              <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
                 My name is Patrick Eugene B. Sacueza, and I'm on a path towards
                 success in the field of IT. Presently, I serve as an IT Desktop
                 Support Engineer (FIDCO), leveraging a decade of experience in
                 providing technical assistance and support to users across
                 diverse industries.
               </p>
-              <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] text-[#333]">
+              <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
                 With experience as an IT Desktop Support Engineer & Intern
                 Programmer
               </p>
-              <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] text-[#333]">
+              <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
                 I enjoy a cup of coffee while coding and troubleshooting.
                 Playing chess, video games and studying new technologies is my
                 hobby.
               </p>
-              <p className="text-justify mt-5 font-[Lato] font-bold text-[1em] md:text-[1.2em] text-[#333]">
+              <p className="text-justify mt-5 font-[Lato] font-bold text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
                 Always practice.
               </p>
-              <p className="text-justify mt-1 font-[Lato] font-bold text-[1em] md:text-[1.2em] text-[#333]">
+              <p className="text-justify mt-1 font-[Lato] font-bold text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
                 Working with computer is my passion.
               </p>
             </div>
