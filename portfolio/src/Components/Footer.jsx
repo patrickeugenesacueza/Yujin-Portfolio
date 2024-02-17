@@ -21,8 +21,8 @@ import About from "../Pages/About";
 export default function Footer() {
   return (
     <>
-      <div className="w-full h-[80vh] md:h-[50vh] bg-[#282424] md:flex lg:flex xl:flex 2xl:flex mt-[2em] p-[2em] text-[#fff]">
-        <div className="h-1/2 md:h-full lg:h-full xl:h-full 2xl:h-full w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
+      <div className="flex flex-wrap bg-[#282424] text-[#fff] p-4 md:p-8">
+        <div className="w-full md:w-1/2">
           <div className="flex">
             <div className="w-[22h] h-full mr-3">
               <img src={YujinFormal} className="w-[20vh] h-[20vh]" alt="Yujin Formal" />
