@@ -23,8 +23,8 @@ export default function Projects() {
   return (
     <>
       <section className="w-full h-auto bg-[#fff]">
-        <div className="">
-          <h2 className="text-center text-[2.5em] font-[900] text-[#333]">
+        <div className="py-[2em]">
+          <h2 className="text-center text-[2.5em] font-[900] text-[#333] font-[lato]">
             Featured Work
           </h2>
 
@@ -161,7 +161,6 @@ export default function Projects() {
           </div>
 
           {/* 5th project */}
-
           <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
             <div className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]">
               <div className="w-full bg-[#fcbc7e] h-1/3 items-center">
@@ -173,7 +172,7 @@ export default function Projects() {
                     icon={faChevronRight}
                     className="mr-2 text-[#861f9e]"
                   />
-                  <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
+                  <h1 className="text-[2rem] text-[#861f9e]">PPABio</h1>
                 </div>
                 <span className="text-[1.5rem] text-[#333] font-light">
                   Our capstone thesis, TUPCare, entails the development of a
