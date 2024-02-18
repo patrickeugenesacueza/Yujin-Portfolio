@@ -10,7 +10,7 @@ export default function About() {
   return (
     <>
       <section>
-        <div className="w-full sm:h-[110vh] md:h-[80vh] lg:h-[80vh] bg-[#fff]">
+        <div className="w-full sm:h-[110vh] md:h-[80vh] lg:h-[80vh] xl:h-[80vh] 2xl:h-[50vh] bg-[#fff]">
           <div className="w-4/12 h-4/12 md:w-2/12 md:h-2/12 mx-auto pt-[2em]">
             <img src={PatrickImage} className="rounded-full" />
           </div>
