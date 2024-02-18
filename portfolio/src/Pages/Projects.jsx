@@ -128,8 +128,72 @@ export default function Projects() {
             </div>
           </div>
 
+          {/* 4th project */}
+          <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
+            <div className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]">
+              <div className="w-full bg-[#fcbc7e] h-1/3 items-center">
+                <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="mr-2 text-[#861f9e]"
+                  />
+                  <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
+                </div>
+                <span className="text-[1.5rem] text-[#333] font-light">
+                  Our capstone thesis, TUPCare, entails the development of a
+                  monitoring web application designed to oversee temperature
+                  scanners, face mask dispensers, and alcohol dispensers within
+                  TUP-Manila
+                </span>
+              </div>
+            </div>
+            <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
+              <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
+                <img src={ClrsDekstopSize} className="h-full w-full" />
+              </div>
+              <div className="h-full w-1/3 bg-red-200">
+                <img src={ClrsMobileSize} className="h-full w-full" />
+              </div>
+            </div>
+          </div>
+
+          {/* 5th project */}
+
+          <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
+            <div className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]">
+              <div className="w-full bg-[#fcbc7e] h-1/3 items-center">
+                <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="mr-2 text-[#861f9e]"
+                  />
+                  <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
+                </div>
+                <span className="text-[1.5rem] text-[#333] font-light">
+                  Our capstone thesis, TUPCare, entails the development of a
+                  monitoring web application designed to oversee temperature
+                  scanners, face mask dispensers, and alcohol dispensers within
+                  TUP-Manila
+                </span>
+              </div>
+            </div>
+            <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
+              <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
+                <img src={ClrsDekstopSize} className="h-full w-full" />
+              </div>
+              <div className="h-full w-1/3 bg-red-200">
+                <img src={ClrsMobileSize} className="h-full w-full" />
+              </div>
+            </div>
+          </div>
         </div>
-        <Footer/>
+        <Footer />
       </section>
     </>
   );
