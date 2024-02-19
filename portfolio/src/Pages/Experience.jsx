@@ -12,11 +12,11 @@ import "react-vertical-timeline-component/style.min.css";
 import Footer from "../Components/Footer";
 
 export default function Experience() {
-  let WorkIconStyles = { background: "#5f2568" };
+  let WorkIconStyles = { background: "#10142c" };
   return (
     <>
-      <div className="py-[3rem] b z-0 bg-[#b37eb5] w-full h-auto px-[2em] md:px-[10.5rem]">
-        <h1 className="text-justify md:text-center lg:text-center 2xl:text-center mb-5 text-2xl font-[lato] font-bold text-[30px] text-[#fff] tracking-[.5em]">
+      <div className="py-[3rem] b z-0 bg-[#F3F3F3] w-full h-auto px-[2em] md:px-[10.5rem]">
+        <h1 className="text-justify md:text-center lg:text-center 2xl:text-center mb-5 text-2xl font-[lato] font-bold text-[30px] text-[#10142c] tracking-[.5em]">
           EXPERIENCE
         </h1>
         <VerticalTimeline>
