@@ -6,6 +6,9 @@ import PatrickImage from "../assets/YujinFormal.jpg";
 //import footer
 import Footer from "../Components/Footer";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 export default function About() {
   return (
     <>
@@ -45,6 +48,16 @@ export default function About() {
               <p className="text-justify mt-1 font-[Lato] font-bold text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
                 Working with computer is my passion.
               </p>
+
+              <div className="flex items-center mt-5 underline cursor-pointer">
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className="mr-2 text-[#333]"
+                />
+                <h1 className="text-[2rem] text-[#333]">
+                  View TechStack
+                </h1>
+              </div>
             </div>
           </div>
 

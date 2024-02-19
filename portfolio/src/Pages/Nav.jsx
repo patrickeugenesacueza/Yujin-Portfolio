@@ -24,9 +24,9 @@ const Nav = () => {
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             <Link to="/Experience">Experience</Link>
           </li>
-          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
+          {/* <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             <Link to="/Techstack">Techstack</Link>
-          </li>
+          </li> */}
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
             <Link to="/Contacts">Contacts</Link>
           </li>
@@ -56,9 +56,9 @@ const Nav = () => {
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
                 <Link to="/Experience">Experience</Link>
               </li>
-              <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+              {/* <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
                 <Link to="/Techstack">Techstack</Link>
-              </li>
+              </li> */}
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
                 <Link to="/Contacts">Contacts</Link>
               </li>
