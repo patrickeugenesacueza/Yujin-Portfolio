@@ -12,10 +12,6 @@
         "description": "View Eugene's previous work experience"
     },
     {
-        "nav":"Techstack",
-        "description": "View Eugene's techstack"
-    },
-    {
         "nav":"Contact",
         "description": "Send an Email"
     }
