@@ -1,7 +1,8 @@
 import React from "react";
+import "../App.css";
 import timelineElements from "../data/TimesheetExperience.json";
-// import { ReactComponent as InternIcon } from "../assets/mobileDevSVG.svg";
-// import { ReactComponent as WorkIcon } from "../assets/techSupportSVG.svg";
+import InternIcon from "../assets/mobileDevSVG.svg";
+import  WorkIcon  from "../assets/internIcon.svg";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -15,13 +16,11 @@ export default function Experience() {
   return (
     <>
       <div className="py-[3rem] b z-0 bg-[#b37eb5] w-full h-auto px-[2em] md:px-[10.5rem]">
-        <h1 className="text-justify md:text-center lg:text-center 2xl:text-center mb-5 text-2xl font-poppins font-bold text-[30px] text-[#fff] tracking-[.5em]">
+        <h1 className="text-justify md:text-center lg:text-center 2xl:text-center mb-5 text-2xl font-[lato] font-bold text-[30px] text-[#fff] tracking-[.5em]">
           EXPERIENCE
         </h1>
         <VerticalTimeline>
           {timelineElements.map((element, index) => {
-            // let isWorkIcon = element.icon === "work";
-            // let isInternIcon = element.icon === "intern";
             let showButton =
               element.buttonText !== undefined &&
               element.buttonText !== null &&
@@ -31,8 +30,8 @@ export default function Experience() {
                 key={element.key || index}
                 date={element.date}
                 dateClassName="date"
-                // iconStyle={isWorkIcon ? WorkIconStyles : WorkIconStyles}
-                // icon={isWorkIcon ? <WorkIcon /> : <InternIcon />}
+                iconStyle={WorkIconStyles}
+                // icon={WorkIcon}
               >
                 <h3 className="pt-[0.25em] font-bold">{element.title} </h3>
                 <h5 className="vertical-timeline-element-subtitle">
