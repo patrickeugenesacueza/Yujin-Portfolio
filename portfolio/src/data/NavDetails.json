@@ -1,18 +1,18 @@
 [
     {
-        "nav":"ABOUT",
+        "nav":"About",
         "description": "Learn more about Eugene"
     },
     {
-        "nav":"PROJECTS",
+        "nav":"Projects",
         "description": "View Eugene's previous projects"
     },
     {
-        "nav":"EXPERIENCE",
+        "nav":"Experience",
         "description": "View Eugene's previous work experience"
     },
     {
-        "nav":"CONTACT",
+        "nav":"Contact",
         "description": "Send an Email"
     }
 ]
