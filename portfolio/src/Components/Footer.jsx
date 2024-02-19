@@ -25,7 +25,11 @@ export default function Footer() {
         <div className="w-full md:w-1/2">
           <div className="flex">
             <div className="w-[22h] h-full mr-3">
-              <img src={YujinFormal} className="w-[20vh] h-[20vh]" alt="Yujin Formal" />
+              <img
+                src={YujinFormal}
+                className="w-[20vh] h-[20vh]"
+                alt="Yujin Formal"
+              />
             </div>
             <div className="w-[78vh] h-full">
               <p className="text-sm md:text-lg font-light text-[1.2rem]">
@@ -86,9 +90,13 @@ export default function Footer() {
           {NavDetails.map((item, index) => (
             <div key={index}>
               {/* Use Link component instead of h1 */}
-              <Link to={`/Pages/${item.nav.toLowerCase()}`}>
+              <Link
+                to={`/${item.nav.toLowerCase()}`}
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 <h1 className="cursor-pointer text-xl font-bold">{item.nav}</h1>
               </Link>
+
               <p className="text-md leading-7 my-3 font-light">
                 {item.description}
               </p>
