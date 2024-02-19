@@ -1,32 +1,32 @@
 [
+  {
+    "id": 1,
+    "title": "Capstone Programmer",
+    "location": "Freelancing",
+    "description":
+      "As a capstone programmer, I spearheaded the development of innovative software solutions, leveraging cutting-edge technologies to address complex challenges. Collaborating closely with stakeholders, I conceptualized, designed, and implemented robust applications, demonstrating proficiency in coding, problem-solving, and project management.",
+      "button": "Button",
+      "date": "June 2019 - Current",
+      "icon": "work"
+  },
     {
-      "id": 1,
-      "title": "Account Payables Intern",
-      "location": "PPC Corp Asia, Quezon City",
+      "id": 2,
+      "title": "Information Techonology Intern",
+      "location": "PPA PMO NCR North, Manila City",
       "description":
-        "Undergone an internship under wholesaler and retail company as accounts payable who prepare the expenses such as revolving fund, utility bills, commission, and payroll.",
+        "During my IT internship, I focused on providing technical support and developing local systems for the Philippine Ports Authority. This involved troubleshooting technical issues and contributing to the creation of tailored systems to enhance operational efficiency.",
         "button": "Button",
-        "date": "February 2023 - May 2023",
+        "date": "May 2023 - September 2023",
         "icon": "intern"
     },
     {
-      "id": 2,
-      "title": "Associate Account Receivables",
-      "location": "Hap Suy Hardware Inc., Manila City",
-      "description":
-        "Processing payments by checking cheque details and remittances of agents, computing deductions, releasing of invoices, and filing of tax forms. Monitoring the flow of payments weekly and updating the status of collections of agents.",
-        "button": "Button",
-        "date": "May 2023 - December 2023",
-        "icon": "work"
-    },
-    {
       "id": 3,
-      "title": "Assistant Account Officer",
-      "location": "Bernhard Schulte Shipmanagement, Manila City",
+      "title": "IT Desktop Support Engineer",
+      "location": "FIDCO, Pasig City",
       "description":
-        "The registration of invoices ensures accurate and systematic recording of financial transactions, providing a transparent overview of the company's financial activities. Additionally, balances confirmation for clients is a crucial step in maintaining financial integrity, verifying the accuracy of accounts and fostering trust in business relationships.",
+        "As an IT Desktop Support Engineer, I provide comprehensive technical assistance, resolving hardware and software issues to ensure seamless operations within the organization. Leveraging my expertise, I maintain and optimize desktop infrastructure, delivering efficient IT solutions tailored to the needs of users and promoting productivity across all levels of the company.",
         "button": "Button",
-        "date": "January 2024 - present",
+        "date": "November 2023 - April 2024",
         "icon": "work"
     }
   ]

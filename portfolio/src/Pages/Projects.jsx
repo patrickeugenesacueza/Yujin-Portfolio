@@ -25,7 +25,7 @@ export default function Projects() {
       <section className="w-full h-auto bg-[#fff]">
         <div className="py-[2em]">
           <h2 className="text-center text-[2.5em] font-[900] text-[#333] font-[lato]">
-            Featured Work
+            Projects
           </h2>
 
           {/* 1st featured work */}
@@ -52,10 +52,10 @@ export default function Projects() {
               </div>
             </div>
             <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
-              <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
+              <div className="h-full w-2/3 md:w-full mr-[2em]">
                 <img src={ClrsDekstopSize} className="h-full w-full" />
               </div>
-              <div className="h-full w-1/3 bg-red-200">
+              <div className="h-full w-1/3 ">
                 <img src={ClrsMobileSize} className="h-full w-full" />
               </div>
             </div>
@@ -84,13 +84,13 @@ export default function Projects() {
               </div>
             </div>
             <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
-              <div className="h-full w-1/3 mx-[.5em] bg-red-200">
+              <div className="h-full w-1/3 mx-[.5em] ">
                 <img src={JProgFirstPicture} className="h-full w-full" />
               </div>
-              <div className="h-full w-1/3  mx-[.5em] bg-red-200">
+              <div className="h-full w-1/3  mx-[.5em] ">
                 <img src={JProgSecondPicture} className="h-full w-full" />
               </div>
-              <div className="h-full w-1/3 mx-[.5em]  bg-red-200">
+              <div className="h-full w-1/3 mx-[.5em]  ">
                 <img src={JProgThirdPicture} className="h-full w-full" />
               </div>
             </div>
@@ -119,10 +119,10 @@ export default function Projects() {
               </div>
             </div>
             <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
-              <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
+              <div className="h-full w-2/3 md:w-full  mr-[2em]">
                 <img src={ClrsDekstopSize} className="h-full w-full" />
               </div>
-              <div className="h-full w-1/3 bg-red-200">
+              <div className="h-full w-1/3 ">
                 <img src={ClrsMobileSize} className="h-full w-full" />
               </div>
             </div>
@@ -151,10 +151,10 @@ export default function Projects() {
               </div>
             </div>
             <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
-              <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
+              <div className="h-full w-2/3 md:w-full mr-[2em]">
                 <img src={ClrsDekstopSize} className="h-full w-full" />
               </div>
-              <div className="h-full w-1/3 bg-red-200">
+              <div className="h-full w-1/3 ">
                 <img src={ClrsMobileSize} className="h-full w-full" />
               </div>
             </div>
@@ -183,10 +183,10 @@ export default function Projects() {
               </div>
             </div>
             <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
-              <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
+              <div className="h-full w-2/3 md:w-full mr-[2em]">
                 <img src={ClrsDekstopSize} className="h-full w-full" />
               </div>
-              <div className="h-full w-1/3 bg-red-200">
+              <div className="h-full w-1/3 ">
                 <img src={ClrsMobileSize} className="h-full w-full" />
               </div>
             </div>

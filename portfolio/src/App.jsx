@@ -7,6 +7,7 @@ import About from "./Pages/About";
 import Project from "./Pages/Projects";
 import Experience from "./Pages/Experience";
 import Contacts from "./Pages/Contacts";
+import Techstack from "./Pages/Techstack";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path="/About" element={<About/>} />
         <Route exact path="/Projects" element={<Project/>} />
         <Route exact path="/Experience" element={<Experience/>}/>
+        <Route exact path="/Techstack" element={<Techstack/>}/>
         <Route exact path="/Contacts" element={<Contacts/>}/>
       </Routes>
     </div>
