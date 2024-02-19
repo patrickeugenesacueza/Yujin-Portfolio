@@ -25,7 +25,7 @@ export default function Projects() {
       <section className="w-full h-auto bg-[#fff]">
         <div className="py-[2em]">
           <h2 className="text-center text-[2.5em] font-[900] text-[#333] font-[lato]">
-            Featured Work
+            Projects
           </h2>
 
           {/* 1st featured work */}
