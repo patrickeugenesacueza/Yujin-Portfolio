@@ -3,10 +3,34 @@ import Footer from "../../Components/Footer";
 
 export default function ClrsProject() {
   return (
-    <section className="">
-      <div className="w-full h-[100vh] flex">
-        <div className="w-1/4 h-full bg-red-700"></div>
-        <div className="w-3/4 h-full bg-violet-800"></div>
+    <section className="bg-white">
+      <div className="w-full h-[100vh] flex bg-white">
+        <div className="w-1/4 h-full px-[2em] bg-white items-center justify-center pt-[10em]">
+          <button className="w-full py-[.2em] px-[1em] bg-blue-900 text-[1.5em] font-[500] font-times text-[#f3f3f3]">
+            VIEW WEBSITE
+          </button>
+          <div className="mx-auto mt-[2em] justify-center text-lg">
+            <h1 className="text-justify font-[900] font-[Lato]">TechStack</h1>
+            <ul className="list-disc text-justify ml-4 mt-1">
+              <li>ReactJS</li>
+              <li>TailwindCSS</li>
+              <li>EmailJS</li>
+              <li>FramerMotion</li>
+            </ul>
+
+            <h1 className="text-justify font-[900] font-[Lato] mt-10">Timeframe</h1>
+            <ul className="list-disc text-justify ml-4 mt-1">
+              <li>December 2023</li>
+              <span className="font-sm font-thin">The timeframe is only 1 month</span>
+              <li>January 2024</li>
+              <span className="font-sm font-thin">The timeframe is only 1 month</span>
+
+            </ul>
+          </div>
+        </div>
+        <div className="w-3/4 h-full bg-white">
+          <h1 className="text-[2.5em] font-[700] text-[Lato] mt-[2em]">Clarise's Portfolio</h1>
+        </div>
       </div>
       <Footer />
     </section>
