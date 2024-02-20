@@ -17,6 +17,8 @@ import TestimonialCocoy from "../assets/testimonialCocoy.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+import { Link } from "react-router-dom";
+
 import Footer from "../Components/Footer.jsx";
 
 export default function Projects() {
@@ -36,13 +38,15 @@ export default function Projects() {
               </div>
               <div>
                 <div className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faChevronRight}
-                    className="mr-2 text-[#861f9e]"
-                  />
-                  <h1 className="text-[2rem] text-[#861f9e]">
-                    Clarise's Portfolio
-                  </h1>
+                  <Link to="/Projects/ClrsProject">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="mr-2 text-[#861f9e]"
+                    />
+                    <h1 className="text-[2rem] text-[#861f9e]">
+                      Clarise's Portfolio
+                    </h1>
+                  </Link>
                 </div>
                 <span className="text-[1.5rem] text-[#333] font-light">
                   I spearheaded the development of Clarise's portfolio utilizing
