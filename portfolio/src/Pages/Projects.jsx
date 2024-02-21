@@ -72,16 +72,16 @@ export default function Projects() {
                 <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
               </div>
               <div>
-              <Link to="/Projects/JprogProject">
-                <div className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faChevronRight}
-                    className="mr-2 text-[#861f9e]"
-                  />
-                  <h1 className="text-[2rem] text-[#861f9e]">
-                    jProg e-Learning
-                  </h1>
-                </div>
+                <Link to="/Projects/JprogProject">
+                  <div className="flex items-center">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="mr-2 text-[#861f9e]"
+                    />
+                    <h1 className="text-[2rem] text-[#861f9e]">
+                      jProg e-Learning
+                    </h1>
+                  </div>
                 </Link>
                 <span className="text-[1.5rem] text-[#333] font-light">
                   I developed the jProg e-Learning platform using Android Studio
@@ -109,13 +109,15 @@ export default function Projects() {
                 <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
               </div>
               <div>
-                <div className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faChevronRight}
-                    className="mr-2 text-[#861f9e]"
-                  />
-                  <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
-                </div>
+                <Link to="/Projects/TUPCare">
+                  <div className="flex items-center">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="mr-2 text-[#861f9e]"
+                    />
+                    <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
+                  </div>
+                </Link>
                 <span className="text-[1.5rem] text-[#333] font-light">
                   Our capstone thesis, TUPCare, entails the development of a
                   monitoring web application designed to oversee temperature
