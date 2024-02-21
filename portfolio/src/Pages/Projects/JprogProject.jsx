@@ -70,8 +70,6 @@ export default function JprogProjects() {
               />
             </div>
           </div>
-
-          
         </div>
       </div>
       <Footer />
