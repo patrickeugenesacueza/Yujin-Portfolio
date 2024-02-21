@@ -51,16 +51,27 @@ export default function JprogProjects() {
           </p>
 
           <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em] mt-[1em]">
-            <div className="h-full w-1/3 mx-[.5em] ">
-              <img src={JProgFirstPicture} className="h-full w-full" />
+            <div className="lg:w-1/3 xl:w-1/3 2xl:w-1/3 md:w-1/2 w-full mx-auto mb-4 lg:mb-0">
+              <img
+                src={JProgFirstPicture}
+                className="h-1/2 md:h-1/2 lg:h-full xl:h-full 2xl:h-full w-full object-cover"
+              />
             </div>
-            <div className="h-full w-1/3  mx-[.5em] ">
-              <img src={JProgSecondPicture} className="h-full w-full" />
+            <div className="lg:w-1/3 xl:w-1/3 2xl:w-1/3 md:w-1/2 w-full mx-auto mb-4 lg:mb-0">
+              <img
+                src={JProgSecondPicture}
+                className="h-full w-full object-cover"
+              />
             </div>
-            <div className="h-full w-1/3 mx-[.5em]  ">
-              <img src={JProgThirdPicture} className="h-full w-full" />
+            <div className="lg:w-1/3 xl:w-1/3 2xl:w-1/3 md:w-1/2 w-full mx-auto">
+              <img
+                src={JProgThirdPicture}
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
+
+          
         </div>
       </div>
       <Footer />
