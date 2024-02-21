@@ -72,6 +72,7 @@ export default function Projects() {
                 <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
               </div>
               <div>
+              <Link to="/Projects/JprogProject">
                 <div className="flex items-center">
                   <FontAwesomeIcon
                     icon={faChevronRight}
@@ -81,6 +82,7 @@ export default function Projects() {
                     jProg e-Learning
                   </h1>
                 </div>
+                </Link>
                 <span className="text-[1.5rem] text-[#333] font-light">
                   I developed the jProg e-Learning platform using Android Studio
                   and Java, incorporating Firebase as the database backend.

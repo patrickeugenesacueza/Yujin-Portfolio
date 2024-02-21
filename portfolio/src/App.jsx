@@ -9,6 +9,7 @@ import Experience from "./Pages/Experience";
 import Contacts from "./Pages/Contacts";
 import Techstack from "./Pages/Techstack";
 import ClrsProject from "./Pages/Projects/ClrsProject";
+import JprogProject from "./Pages/Projects/JprogProject";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route exact path="/Techstack" element={<Techstack/>}/>
         <Route exact path="/Contacts" element={<Contacts/>}/>
         <Route exact path="/Projects/ClrsProject" element={<ClrsProject/>}/>
+        <Route exact path="/Projects/JprogProject" element={<JprogProject/>}/>
       </Routes>
     </div>
   );
