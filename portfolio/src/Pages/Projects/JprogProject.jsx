@@ -10,47 +10,44 @@ export default function JprogProjects() {
       <div className="w-full h-[auto] flex flex-col-reverse lg:flex-row bg-white">
         <div className="w-full lg:w-1/4 h-full px-[2em] bg-white items-center justify-center pt-[1em] md:pt-[10em] pb-[1em]">
           <button className="w-full py-[.2em] px-[1em] bg-[#10142c] text-[1.5em] font-[500] font-times text-[#f3f3f3]">
-            VIEW WEBSITE
+            VIEW APK
           </button>
           <div className="mx-auto mt-[2em] justify-center text-lg">
             <h1 className="text-justify font-[900] font-[Lato]">TechStack</h1>
             <ul className="list-disc text-justify ml-4 mt-1">
-              <li>ReactJS</li>
-              <li>TailwindCSS</li>
-              <li>EmailJS</li>
-              <li>FramerMotion</li>
+              <li>Java</li>
+              <li>OOP</li>
+              <li>Firebase</li>
+              <li>NoSQL</li>
             </ul>
             <h1 className="text-justify font-[900] font-[Lato] mt-10">
               Timeframe
             </h1>
             <ul className="list-disc text-justify ml-4 mt-1">
-              <li>December 2023</li>
+              <li>June 2023</li>
               <span className="font-sm font-thin">
-                In December 2023, our focus shifted to finding inspiration and
-                brainstorming with Ma'am Clarise. Despite the limited timeframe
-                of just one month, we were determined to make the most of it.
+                In June 2023, it's all about brainstorming. We're diving deep
+                into ideas, tossing around possibilities, and really getting
+                those creative juices flowing.
               </span>
-              <li>January 2024</li>
+              <li>October 2023</li>
               <span className="font-sm font-thin">
-                In January 2024, our efforts were solely dedicated to adding the
-                finishing touches. Every detail mattered as we meticulously
-                refined Ma'am Clarise's portfolio to perfection.
+                In October 2023, the application is ready to hit the stage!
+                After months of hard work, late nights, and endless lines of
+                code, we've brought our vision to life.
               </span>
             </ul>
           </div>
         </div>
         <div className="w-full lg:w-3/4 h-full bg-white pb-[4em] px-[2em]">
           <h1 className="text-[2.5em] font-[700] text-[Lato] mt-[2em]">
-            Clarise's Portfolio
+            JProg's e-Learning
           </h1>
           <p className="text-[1.5em] font-thin">
-            I had the honor of crafting Ma'am Clarise's Portfolio, an
-            exhilarating journey that allowed me to showcase her work
-            effectively. Developing Ma'am Clarise's Portfolio was an exciting
-            endeavor, offering me the opportunity to bring her vision to life in
-            a digital space. It was a rewarding experience to be entrusted with
-            the creation of Ma'am Clarise's Portfolio, a project that challenged
-            and inspired me as a developer
+            Experience the power of jProg e-learning, where Java and Firebase
+            technologies converge to redefine online education. Leveraging
+            Java's robustness and Firebase's real-time database capabilities,
+            this application delivers a seamless e-learning experience.
           </p>
 
           <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em] mt-[1em]">
