@@ -24,13 +24,13 @@ export default function FitBuddyProject() {
               Timeframe
             </h1>
             <ul className="list-disc text-justify ml-4 mt-1">
-              <li>June 2023</li>
+              <li>January 2023</li>
               <span className="font-sm font-thin">
                 In June 2023, it's all about brainstorming. We're diving deep
                 into ideas, tossing around possibilities, and really getting
                 those creative juices flowing.
               </span>
-              <li>October 2023</li>
+              <li>Marc 2023</li>
               <span className="font-sm font-thin">
                 In October 2023, the application is ready to hit the stage!
                 After months of hard work, late nights, and endless lines of

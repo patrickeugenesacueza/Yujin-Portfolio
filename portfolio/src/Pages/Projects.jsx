@@ -14,6 +14,7 @@ import JProgThirdPicture from "../assets/JE3.png";
 import TestimonialClarise from "../assets/testimonialClarise.jpg";
 import TestimonialCocoy from "../assets/testimonialCocoy.jpg";
 
+import TUPCareLogo from "../assets/TUPCareLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -105,8 +106,8 @@ export default function Projects() {
           {/* 3rd featured work */}
           <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
             <div className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]">
-              <div className="w-full bg-[#fcbc7e] h-1/3 items-center">
-                <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
+              <div className="w-full bg-[#F3F3F3] h-1/3 items-center">
+                <img src={TUPCareLogo} className="w-1/2 h-full mx-auto" />
               </div>
               <div>
                 <Link to="/Projects/TUPCare">
