@@ -32,7 +32,7 @@ export default function ClrsProject() {
           <h1 className="text-[2.5em] font-[700] text-[Lato] mt-[2em]">Clarise's Portfolio</h1>
           <p className="text-[1.5em] font-thin">I had the honor of crafting Ma'am Clarise's Portfolio, an exhilarating journey that allowed me to showcase her work effectively. Developing Ma'am Clarise's Portfolio was an exciting endeavor, offering me the opportunity to bring her vision to life in a digital space. It was a rewarding experience to be entrusted with the creation of Ma'am Clarise's Portfolio, a project that challenged and inspired me as a developer</p>
         
-          <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em] mt-[1em]">
+          <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-full h-full bg-[#F3F3F3] p-[1.5em] mt-[1em]">
             <div className="h-full w-full md:w-full bg-red-700 mr-[2em]">
               <img src={ClrsDekstopSize} className="h-full w-full" alt="Desktop Size" />
             </div>
