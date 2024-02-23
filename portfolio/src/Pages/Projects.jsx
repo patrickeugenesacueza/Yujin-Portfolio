@@ -143,13 +143,15 @@ export default function Projects() {
                 <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
               </div>
               <div>
+              <Link to="/Projects/FitBuddy">
                 <div className="flex items-center">
                   <FontAwesomeIcon
                     icon={faChevronRight}
                     className="mr-2 text-[#861f9e]"
                   />
-                  <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
+                  <h1 className="text-[2rem] text-[#861f9e]">FitBuddy</h1>
                 </div>
+                </Link>
                 <span className="text-[1.5rem] text-[#333] font-light">
                   Our capstone thesis, TUPCare, entails the development of a
                   monitoring web application designed to oversee temperature

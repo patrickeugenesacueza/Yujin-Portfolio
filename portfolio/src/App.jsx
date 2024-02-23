@@ -11,6 +11,7 @@ import Techstack from "./Pages/Techstack";
 import ClrsProject from "./Pages/Projects/ClrsProject";
 import JprogProject from "./Pages/Projects/JprogProject";
 import TUPCare from "./Pages/Projects/TUPCare";
+import FitBuddyProject from "./Pages/Projects/FitBuddyProject";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route exact path="/Projects/ClrsProject" element={<ClrsProject/>}/>
         <Route exact path="/Projects/JprogProject" element={<JprogProject/>}/>
         <Route exact path="/Projects/TUPCare" element={<TUPCare/>}/>
+        <Route exact path="/Projects/FitBuddy" element={<FitBuddyProject/>}/>
       </Routes>
     </div>
   );
