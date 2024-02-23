@@ -6,6 +6,10 @@ import MobileLogo from "../assets/mobileDevSVG.svg";
 import TechSuppLogo from "../assets/techSupportSVG.svg";
 import ClrsDekstopSize from "../assets/clrsDekstopSize.png";
 import ClrsMobileSize from "../assets/clrsMobileSize.png";
+
+import TUPCareDekstopSize from "../assets/TUPCareDesktopSize.png";
+import TUPCareMobileSize from "../assets/TUPCareMobileSize.png";
+
 import ClrsIcon from "../assets/clrsIcon.png";
 import JProgLogo from "../assets/jProgLogo.png";
 import JProgFirstPicture from "../assets/JE1.png";
@@ -34,7 +38,7 @@ export default function Projects() {
           {/* 1st featured work */}
           <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
             <div className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]">
-              <div className="w-full bg-[#F3F3F3] h-1/3 items-center">
+              <div className="w-full bg-[#e191e3] h-1/3 items-center">
                 <img src={ClrsIcon} className="w-1/2 h-full mx-auto" />
               </div>
               <div>
@@ -77,9 +81,9 @@ export default function Projects() {
                   <div className="flex items-center">
                     <FontAwesomeIcon
                       icon={faChevronRight}
-                      className="mr-2 text-[#861f9e]"
+                      className="mr-2 text-[#af763c]"
                     />
-                    <h1 className="text-[2rem] text-[#861f9e]">
+                    <h1 className="text-[2rem] text-[#af763c]">
                       jProg e-Learning
                     </h1>
                   </div>
@@ -114,9 +118,9 @@ export default function Projects() {
                   <div className="flex items-center">
                     <FontAwesomeIcon
                       icon={faChevronRight}
-                      className="mr-2 text-[#861f9e]"
+                      className="mr-2 text-[#bd3f3f]"
                     />
-                    <h1 className="text-[2rem] text-[#861f9e]">TUPCare</h1>
+                    <h1 className="text-[2rem] text-[#bd3f3f]">TUPCare</h1>
                   </div>
                 </Link>
                 <span className="text-[1.5rem] text-[#333] font-light">
@@ -129,10 +133,10 @@ export default function Projects() {
             </div>
             <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
               <div className="h-full w-2/3 md:w-full  mr-[2em]">
-                <img src={ClrsDekstopSize} className="h-full w-full" />
+                <img src={TUPCareDekstopSize} className="h-full w-full" />
               </div>
               <div className="h-full w-1/3 ">
-                <img src={ClrsMobileSize} className="h-full w-full" />
+                <img src={TUPCareMobileSize} className="h-full w-full" />
               </div>
             </div>
           </div>

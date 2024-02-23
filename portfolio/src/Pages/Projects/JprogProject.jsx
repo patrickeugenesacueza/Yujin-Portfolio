@@ -50,7 +50,7 @@ export default function JprogProjects() {
             this application delivers a seamless e-learning experience.
           </p>
 
-          <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em] mt-[1em]">
+          <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-full h-full bg-[#F3F3F3] p-[1.5em] mt-[1em]">
             <div className="lg:w-1/3 xl:w-1/3 2xl:w-1/3 md:w-1/2 w-full mx-auto mb-4 lg:mb-0">
               <img
                 src={JProgFirstPicture}
