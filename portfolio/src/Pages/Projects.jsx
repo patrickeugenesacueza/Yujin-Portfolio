@@ -9,6 +9,7 @@ import ClrsMobileSize from "../assets/clrsMobileSize.png";
 
 import TUPCareDekstopSize from "../assets/TUPCareDesktopSize.png";
 import TUPCareMobileSize from "../assets/TUPCareMobileSize.png";
+import TUPCareLogo from "../assets/TUPCareLogo.png";
 
 import ClrsIcon from "../assets/clrsIcon.png";
 import JProgLogo from "../assets/jProgLogo.png";
@@ -18,7 +19,6 @@ import JProgThirdPicture from "../assets/JE3.png";
 import TestimonialClarise from "../assets/testimonialClarise.jpg";
 import TestimonialCocoy from "../assets/testimonialCocoy.jpg";
 
-import TUPCareLogo from "../assets/TUPCareLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
