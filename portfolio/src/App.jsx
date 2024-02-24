@@ -12,6 +12,7 @@ import ClrsProject from "./Pages/Projects/ClrsProject";
 import JprogProject from "./Pages/Projects/JprogProject";
 import TUPCare from "./Pages/Projects/TUPCare";
 import FitBuddyProject from "./Pages/Projects/FitBuddyProject";
+import TrackingSystem from "./Pages/Projects/TrackingSystem";
 
 const App = () => {
   return (
@@ -27,7 +28,7 @@ const App = () => {
         <Route exact path="/Projects/ClrsProject" element={<ClrsProject/>}/>
         <Route exact path="/Projects/JprogProject" element={<JprogProject/>}/>
         <Route exact path="/Projects/TUPCare" element={<TUPCare/>}/>
-        <Route exact path="/Projects/FitBuddy" element={<FitBuddyProject/>}/>
+        <Route exact path="/Projects/TrackingSystem" element={<TrackingSystem/>}/>
       </Routes>
     </div>
   );
