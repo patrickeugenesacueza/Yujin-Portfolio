@@ -77,7 +77,7 @@ export default function Footer() {
                     alt={`image ${index}`}
                     className="h-[3vh] w-[3vh] mr-[1em] mt-1 "
                   />
-                  <h4 className="uppercase text-xl font-bold ">{item.media}</h4>
+                  <h4 className="text-xl font-bold ">{item.media}</h4>
                 </div>
               </Link>
               <p className="text-md leading-7 my-3 font-light">

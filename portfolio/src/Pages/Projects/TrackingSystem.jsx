@@ -29,13 +29,17 @@ export default function TrackingSystem() {
               <ul className="list-disc text-justify ml-4 mt-1">
                 <li>June 2023</li>
                 <span className="font-sm font-thin">
-                  In June 2023, we shifted gears to focus on materializing our
-                  vision by crafting both the hardware and software prototypes.
+                  As of June 2023, our focus is on developing the user interface
+                  for the Case Tracking System, followed by presenting potential
+                  features to the officers for their input and feedback.
                 </span>
                 <li>July 2023</li>
                 <span className="font-sm font-thin">
-                  In July 2023, after months of dedicated effort and
-                  relentless refinement, our prototype stands complete.
+                  As of July 2023, the system development phase has concluded,
+                  and we have transitioned into the debugging phase, where we
+                  meticulously identify and resolve any technical issues or
+                  errors to ensure the system's smooth operation and
+                  reliability.
                 </span>
               </ul>
             </div>
@@ -45,10 +49,10 @@ export default function TrackingSystem() {
               Case Tracking System
             </h1>
             <p className="text-[1.5em] font-thin">
-              As one of the developer of the Case Tracking System for the Port Police
-              Division, my role involves designing intuitive user interfaces and
-              implementing robust backend functionalities to streamline case
-              management processes.
+              As one of the developer of the Case Tracking System for the Port
+              Police Division, my role involves designing intuitive user
+              interfaces and implementing robust backend functionalities to
+              streamline case management processes.
             </p>
             <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-full h-[auto] bg-[#F3F3F3] p-[1.5em] mt-[1em]">
               <div className="h-full w-full md:w-full bg-red-700 mr-[2em]">

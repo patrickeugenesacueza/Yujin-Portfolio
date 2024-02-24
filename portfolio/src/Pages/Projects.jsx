@@ -152,9 +152,9 @@ export default function Projects() {
                   <div className="flex items-center">
                     <FontAwesomeIcon
                       icon={faChevronRight}
-                      className="mr-2 text-[#861f9e]"
+                      className="mr-2 text-[#314a9b]"
                     />
-                    <h1 className="text-[2rem] text-[#861f9e]">
+                    <h1 className="text-[2rem] text-[#314a9b]">
                       Case Tracking System
                     </h1>
                   </div>
