@@ -50,7 +50,7 @@ export default function TUPCare() {
             with our innovative website, ensuring a safe and healthy environment
             for all.
           </p>
-          <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-full h-[400px] bg-[#F3F3F3] p-[1.5em] mt-[1em]">
+          <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-full h-[auto] bg-[#F3F3F3] p-[1.5em] mt-[1em]">
             <div className="h-full w-full md:w-full bg-red-700 mr-[2em]">
               <img
                 src={ClrsDekstopSize}

@@ -148,20 +148,21 @@ export default function Projects() {
                 <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
               </div>
               <div>
-              <Link to="/Projects/FitBuddy">
-                <div className="flex items-center">
-                  <FontAwesomeIcon
-                    icon={faChevronRight}
-                    className="mr-2 text-[#861f9e]"
-                  />
-                  <h1 className="text-[2rem] text-[#861f9e]">FitBuddy</h1>
-                </div>
+                <Link to="/Projects/TrackingSystem">
+                  <div className="flex items-center">
+                    <FontAwesomeIcon
+                      icon={faChevronRight}
+                      className="mr-2 text-[#861f9e]"
+                    />
+                    <h1 className="text-[2rem] text-[#861f9e]">
+                      Case Tracking System
+                    </h1>
+                  </div>
                 </Link>
                 <span className="text-[1.5rem] text-[#333] font-light">
-                  Our capstone thesis, TUPCare, entails the development of a
-                  monitoring web application designed to oversee temperature
-                  scanners, face mask dispensers, and alcohol dispensers within
-                  TUP-Manila
+                  The case tracking system implemented by the Port Police
+                  Division ensures efficient management of maritime incidents,
+                  providing real-time updates and comprehensive data analysis.
                 </span>
               </div>
             </div>
