@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../Components/Footer";
 import ClrsDekstopSize from "../../assets/TUPCareDesktopSize.png";
 import ClrsMobileSize from "../../assets/TUPCareMobileSize.png";
+import PortPoliceDesktopSize2 from "../../assets/DesktopSizePPD2.png";
 
 export default function TrackingSystem() {
   return (
@@ -55,20 +56,20 @@ export default function TrackingSystem() {
               streamline case management processes.
             </p>
             <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-full h-[auto] bg-[#F3F3F3] p-[1.5em] mt-[1em]">
-              <div className="h-full w-full md:w-full bg-red-700 mr-[2em]">
+              <div className="h-full w-full md:w-full">
                 <img
-                  src={ClrsDekstopSize}
+                  src={PortPoliceDesktopSize2}
                   className="h-full w-full object-cover"
                   alt="Desktop Size"
                 />
               </div>
-              <div className="hidden md:hidden lg:block xl:block 2xl:block h-full w-1/3 bg-red-200">
+              {/* <div className="hidden md:hidden lg:block xl:block 2xl:block h-full w-1/3 bg-red-200">
                 <img
                   src={ClrsMobileSize}
                   className="h-full w-full object-cover"
                   alt="Mobile Size"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
