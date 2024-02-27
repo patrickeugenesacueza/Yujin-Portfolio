@@ -21,6 +21,7 @@ import TUPCareDekstopSize from "../assets/TUPCareDesktopSize.png";
 import TUPCareMobileSize from "../assets/TUPCareMobileSize.png";
 import TUPCareLogo from "../assets/TUPCareLogo.png";
 
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
