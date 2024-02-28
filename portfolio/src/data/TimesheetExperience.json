@@ -1,6 +1,16 @@
 [
   {
     "id": 1,
+    "title": "Accountant Staff Intern - (SHS)",
+    "location": "Lacerta Global Shipping, Parañaque",
+    "description":
+      "During my internship as an accountant staff, I diligently computed the VAT tax for each receipt and accurately encoded the amounts into Excel spreadsheets for record-keeping and analysis purposes. My attention to detail and proficiency in Excel ensured the precise documentation of financial transactions in compliance with tax regulations.",
+      "button": "Button",
+      "date": "November 2018 - February 2019",
+      "icon": "intern"
+  },
+  {
+    "id": 2,
     "title": "Capstone Programmer",
     "location": "Freelancing",
     "description":
@@ -10,8 +20,8 @@
       "icon": "work"
   },
     {
-      "id": 2,
-      "title": "Information Techonology Intern",
+      "id": 3,
+      "title": "Information Techonology Intern - (College)",
       "location": "PPA PMO NCR North, Manila City",
       "description":
         "During my IT internship, I focused on providing technical support and developing local systems for the Philippine Ports Authority. This involved troubleshooting technical issues and contributing to the creation of tailored systems to enhance operational efficiency.",
@@ -20,7 +30,7 @@
         "icon": "intern"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "IT Desktop Support Engineer",
       "location": "FIDCO, Pasig City",
       "description":
