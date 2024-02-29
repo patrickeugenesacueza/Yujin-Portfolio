@@ -6,18 +6,16 @@ export default function Contacts() {
   return (
     <>
       <section>
-        <div className="w-full h-[100vh] bg-[#fff] flex py-[4em] px-[10em]">
-          <div className="h-full w=1/2 text-justify px-[2em] mr-[5em]">
-            <h1 className="text-[3.5em] font-[Lato] font-extrabold">
-              Get In Touch
-            </h1>
-            <h3 className="text-[1.5em]">
+        <div className="flex flex-col md:flex-row bg-[#fff] py-8 md:py-16 px-4 md:px-[8em]">
+          <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 text-center md:text-left px-4 md:px-0 mb-8 md:mb-0">
+            <h1 className="text-3xl md:text-5xl xl:text-5xl 2xl:text-5xl font-extrabold mb-4">Get In Touch</h1>
+            <h3 className="text-lg md:text-xl xl:text-2xl 2xl:text-2xl">
               Send a general message or details of a project you'd like me to be
               a part of and I'll get back to you as soon as possible.
             </h3>
             <Form />
           </div>
-          <div className="h-full w-1/2 ">
+          <div className="hidden md:block lg:block xl:block 2xl:block h-full w-1/2 px-[5em] ">
             <h3 className="font-[500] text-[2em] mb-3">About Eugene</h3>
             <div className="mb-6">
               <p>
@@ -31,13 +29,13 @@ export default function Contacts() {
               </p>
             </div>
             <h2>Email: sacuezapatrickeugene@gmail.com</h2>
-            <h2>Tel: 09760284911</h2>
+            <h2>Tel: (0976) 028 4911</h2>
             <div className="flex">
             </div>
           </div>
         </div>
         <Footer />
-      </section>{" "}
+      </section>
     </>
   );
 }
