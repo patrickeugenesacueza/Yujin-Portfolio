@@ -9,7 +9,7 @@ export default function TUPCare() {
     <section className="bg-white">
       <div className="w-full h-[auto] flex flex-col-reverse lg:flex-row bg-white">
         <div className="w-full lg:w-1/4 h-full px-[2em] bg-white items-center justify-center pt-[1em] md:pt-[10em] pb-[1em]">
-          <Link to="https://drive.google.com/drive/u/1/folders/1u48ZFY2f6Z_uze2bSgewDzo9OPAZAf5M">
+          <Link to="https://drive.google.com/drive/u/1/folders/1u48ZFY2f6Z_uze2bSgewDzo9OPAZAf5M" target="_blank" rel="noopener noreferrer">
             <button className="w-full py-[.2em] px-[1em] bg-[#10142c] text-[1.5em] font-[500] font-times text-[#f3f3f3]">
               VIEW SOURCE CODE
             </button>
@@ -21,8 +21,11 @@ export default function TUPCare() {
               <li>CSS3</li>
               <li>Bootstrap</li>
               <li>Javascript</li>
+              <li>jQuery</li>
+              <li>AJAX</li>
               <li>PHP</li>
-              <li>RestAPI</li>
+              <li>restAPI</li>              
+              <li>mySQL</li>
             </ul>
 
             <h1 className="text-justify font-[900] font-[Lato] mt-10">
