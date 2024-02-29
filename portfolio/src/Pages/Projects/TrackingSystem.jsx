@@ -20,6 +20,8 @@ export default function TrackingSystem() {
                 <li>CSS3</li>
                 <li>Bootstrap</li>
                 <li>Javascript</li>
+                <li>jQuery</li>
+                <li>AJAX</li>                
                 <li>PHP</li>
                 <li>mySQL</li>
               </ul>
