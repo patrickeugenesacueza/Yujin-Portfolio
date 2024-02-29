@@ -9,7 +9,7 @@ export default function ClrsProject() {
     <section className="bg-white">
       <div className="w-full h-[auto] flex flex-col-reverse lg:flex-row bg-white">
         <div className="w-full lg:w-1/4 h-full px-[2em] bg-white items-center justify-center pt-[1em] md:pt-[10em] pb-[1em]">
-          <Link to="https://clrsduque.vercel.app/">
+          <Link to="https://clrsduque.vercel.app/" target="_blank" rel="noopener noreferrer">
             <button className="w-full py-[.2em] px-[1em] bg-[#10142c] text-[1.5em] font-[500] font-times text-[#f3f3f3]">
               VIEW WEBSITE
             </button>

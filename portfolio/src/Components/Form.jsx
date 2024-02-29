@@ -22,7 +22,7 @@ export default function Form() {
               placeholder=" sample@email.com"
             />
             <textarea
-              className="w-full h-[20vh] mb-5 border-[1.5px] border-black"
+              className="w-full h-[30vh] mb-5 border-[1.5px] border-black"
               placeholder=" Message"
             />
             <button className="py-2 px-4 bg-slate-900 text-[1em] md:text-[2em] lg:text-[2em] xl:text-[2em] 2xl:text-[2em] mt-5">
