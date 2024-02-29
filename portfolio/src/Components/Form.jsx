@@ -28,7 +28,7 @@ export default function Form() {
             <button className="py-2 px-4 bg-slate-900 text-[1em] md:text-[2em] lg:text-[2em] xl:text-[2em] 2xl:text-[2em] mt-5">
               {" "}
               <div className="flex items-center">
-                <h1 className="text-[1em] md:text-[2em] lg:text-[2em] xl:text-[2em] 2xl:text-[2em] text-white">Send</h1>
+                <h1 className="text-[1em] md:text-[1em] lg:text-[1em] xl:text-[1em] 2xl:text-[1em] text-white">Send</h1>
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   className="ml-2 text-white"
