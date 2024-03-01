@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 // import testimonial json
 import data from "../data/TestimonialFeedback.json";
@@ -28,7 +28,35 @@ import { motion } from "framer-motion";
 
 import Footer from "../Components/Footer.jsx";
 
+import { useInView } from "react-intersection-observer";
+
 const HeroSection = () => {
+  const [isVisible1, setIsVisible1] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
+  const [isVisible3, setIsVisible3] = useState(false);
+
+  const { ref: ref1, inView: inView1 } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
+  const { ref: ref3, inView: inView3 } = useInView();
+
+  useEffect(() => {
+    if (inView1) {
+      setIsVisible1(true);
+    }
+  }, [inView1]);
+
+  useEffect(() => {
+    if (inView2) {
+      setIsVisible2(true);
+    }
+  }, [inView2]);
+
+  useEffect(() => {
+    if (inView3) {
+      setIsVisible3(true);
+    }
+  }, [inView3]);
+
   return (
     <section className="w-full h-auto bg-[#fff] pt-[5em]">
       <div className="text-center block">
@@ -57,13 +85,15 @@ const HeroSection = () => {
         </div>
       </div>
       {/* grid box */}
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-4 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-4 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]"
+      >
         {/* 1st container */}
-
         <motion.div
-          initial={{ opacity: 0, x: 100 }} // Initial position, starting from the right
-          animate={{ opacity: 1, x: 0 }} // Final position, fading in from right to left
-          transition={{ duration: 0.5, delay: 0}} // Duration of the animation
+          ref={ref1}
+          initial={{ opacity: 0, x: 100 }}
+          animate={isVisible1 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+          transition={{ duration: 0.5, delay: 0 }}
           className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center"
         >
           <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
@@ -72,6 +102,7 @@ const HeroSection = () => {
               height={80}
               width={190}
               className="mx-auto"
+              alt="Frontend Logo"
             />
             <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">Front-end Development</h1>
@@ -85,13 +116,20 @@ const HeroSection = () => {
 
         {/* 2nd container */}
         <motion.div
-          initial={{ opacity: 0, x: 100 }} // Initial position, starting from the right
-          animate={{ opacity: 1, x: 0 }} // Final position, fading in from right to left
-          transition={{ duration: 0.5, delay: 0.2}} // Duration of the animation
+          ref={ref2}
+          initial={{ opacity: 0, x: 100 }}
+          animate={isVisible2 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center"
         >
           <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
-            <img src={MobileLogo} height={80} width={190} className="mx-auto" />
+            <img
+              src={MobileLogo}
+              height={80}
+              width={190}
+              className="mx-auto"
+              alt="Mobile Logo"
+            />
             <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">
                 Mobile Application Development
@@ -106,9 +144,10 @@ const HeroSection = () => {
 
         {/* 3rd container */}
         <motion.div
-          initial={{ opacity: 0, x: 100 }} // Initial position, starting from the right
-          animate={{ opacity: 1, x: 0 }} // Final position, fading in from right to left
-          transition={{ duration: 0.5, delay: 0.4}} // Duration of the animation
+          ref={ref3}
+          initial={{ opacity: 0, x: 100 }}
+          animate={isVisible3 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center"
         >
           <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
@@ -117,6 +156,7 @@ const HeroSection = () => {
               height={80}
               width={190}
               className="mx-auto"
+              alt="Tech Support Logo"
             />
             <div className="mt-5 px-4 sm:px-0 md:px-4">
               <h1 className="font-[700] mb-1">IT Tech Support</h1>
@@ -127,7 +167,6 @@ const HeroSection = () => {
             </div>
           </div>
         </motion.div>
-      
       </div>
 
       <hr className=" mt-[8em] mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]" />
