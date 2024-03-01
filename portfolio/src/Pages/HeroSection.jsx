@@ -21,9 +21,10 @@ import TUPCareDekstopSize from "../assets/TUPCareDesktopSize.png";
 import TUPCareMobileSize from "../assets/TUPCareMobileSize.png";
 import TUPCareLogo from "../assets/TUPCareLogo.png";
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+import { motion } from "framer-motion";
 
 import Footer from "../Components/Footer.jsx";
 
@@ -58,7 +59,13 @@ const HeroSection = () => {
       {/* grid box */}
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-4 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
         {/* 1st container */}
-        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+
+        <motion.div
+          initial={{ opacity: 0, x: 100 }} // Initial position, starting from the right
+          animate={{ opacity: 1, x: 0 }} // Final position, fading in from right to left
+          transition={{ duration: 0.5, delay: 0}} // Duration of the animation
+          className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center"
+        >
           <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img
               src={FrontEndLogo}
@@ -74,10 +81,15 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* 2nd container */}
-        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }} // Initial position, starting from the right
+          animate={{ opacity: 1, x: 0 }} // Final position, fading in from right to left
+          transition={{ duration: 0.5, delay: 0.2}} // Duration of the animation
+          className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center"
+        >
           <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img src={MobileLogo} height={80} width={190} className="mx-auto" />
             <div className="mt-5 px-4 sm:px-0 md:px-4">
@@ -90,10 +102,15 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* 3rd container */}
-        <div className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }} // Initial position, starting from the right
+          animate={{ opacity: 1, x: 0 }} // Final position, fading in from right to left
+          transition={{ duration: 0.5, delay: 0.4}} // Duration of the animation
+          className="bg-[#F3F3F3] py-8 sm:py-10 md:py-10 lg:py-10 xl:py-8 flex items-center justify-center text-center"
+        >
           <div className="flex flex-col items-center sm:text-left lg:text-center xl:text-center 2xl:text-center">
             <img
               src={TechSuppLogo}
@@ -109,7 +126,8 @@ const HeroSection = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
+      
       </div>
 
       <hr className=" mt-[8em] mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]" />
