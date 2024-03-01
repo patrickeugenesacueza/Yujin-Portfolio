@@ -35,9 +35,25 @@ const HeroSection = () => {
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
 
+  const [isVisible4, setIsVisible4] = useState(false);
+  const [isVisible5, setIsVisible5] = useState(false);
+  const [isVisible6, setIsVisible6] = useState(false);
+
+  const [isVisible7, setIsVisible7] = useState(false);
+  const [isVisible8, setIsVisible8] = useState(false);
+  const [isVisible9, setIsVisible9] = useState(false);
+
   const { ref: ref1, inView: inView1 } = useInView();
   const { ref: ref2, inView: inView2 } = useInView();
   const { ref: ref3, inView: inView3 } = useInView();
+
+  const { ref: ref4, inView: inView4 } = useInView();
+  const { ref: ref5, inView: inView5 } = useInView();
+  const { ref: ref6, inView: inView6 } = useInView();
+
+  const { ref: ref7, inView: inView7 } = useInView();
+  const { ref: ref8, inView: inView8 } = useInView();
+  const { ref: ref9, inView: inView9 } = useInView();
 
   useEffect(() => {
     if (inView1) {
@@ -57,8 +73,44 @@ const HeroSection = () => {
     }
   }, [inView3]);
 
+  useEffect(() => {
+    if (inView4) {
+      setIsVisible4(true);
+    }
+  }, [inView4]);
+
+  useEffect(() => {
+    if (inView5) {
+      setIsVisible5(true);
+    }
+  }, [inView5]);
+
+  useEffect(() => {
+    if (inView6) {
+      setIsVisible6(true);
+    }
+  }, [inView6]);
+
+  useEffect(() => {
+    if (inView7) {
+      setIsVisible7(true);
+    }
+  }, [inView7]);
+
+  useEffect(() => {
+    if (inView8) {
+      setIsVisible8(true);
+    }
+  }, [inView8]);
+
+  useEffect(() => {
+    if (inView9) {
+      setIsVisible9(true);
+    }
+  }, [inView9]);
+
   return (
-    <section className="w-full h-auto bg-[#fff] pt-[5em]">
+    <section className="w-full h-auto bg-[#fff] pt-[5em] overflow-y-scroll no-scrollbar">
       <div className="text-center block">
         <TypeAnimation
           sequence={[
@@ -85,9 +137,7 @@ const HeroSection = () => {
         </div>
       </div>
       {/* grid box */}
-      <div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-4 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]"
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-10 px-4 sm:px-10 md:px-10 lg:px-[10em] xl:px-[10em]">
         {/* 1st container */}
         <motion.div
           ref={ref1}
@@ -177,7 +227,15 @@ const HeroSection = () => {
 
         {/* 1st featured work */}
         <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
-          <div className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]">
+          <motion.div
+            ref={ref4}
+            initial={{ opacity: 0, x: -100 }}
+            animate={
+              isVisible4 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
+            }
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]"
+          >
             <div className="w-full bg-[#F3F3F3] h-1/3 items-center">
               <img src={ClrsIcon} className="w-1/2 h-full mx-auto" />
             </div>
@@ -197,20 +255,34 @@ const HeroSection = () => {
                 React packages
               </span>
             </div>
-          </div>
-          <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
+          </motion.div>
+          <motion.div
+            ref={ref5}
+            initial={{ opacity: 0, x: 100 }}
+            animate={isVisible5 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]"
+          >
             <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
               <img src={ClrsDekstopSize} className="h-full w-full" />
             </div>
             <div className="h-full w-1/3 bg-red-200">
               <img src={ClrsMobileSize} className="h-full w-full" />
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* 2nd featured work */}
         <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
-          <div className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]">
+          <motion.div
+            ref={ref6}
+            initial={{ opacity: 0, x: -100 }}
+            animate={
+              isVisible6 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
+            }
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]"
+          >
             <div className="w-full bg-[#fcbc7e] h-1/3 items-center">
               <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
             </div>
@@ -227,8 +299,15 @@ const HeroSection = () => {
                 and Java, incorporating Firebase as the database backend.
               </span>
             </div>
-          </div>
-          <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
+          </motion.div>
+
+          <motion.div
+            ref={ref7}
+            initial={{ opacity: 0, x: 100 }}
+            animate={isVisible7 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]"
+          >
             <div className="h-full w-1/3 mx-[.5em] bg-red-200">
               <img src={JProgFirstPicture} className="h-full w-full" />
             </div>
@@ -238,12 +317,20 @@ const HeroSection = () => {
             <div className="h-full w-1/3 mx-[.5em]  bg-red-200">
               <img src={JProgThirdPicture} className="h-full w-full" />
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* 3rd featured work */}
         <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
-          <div className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]">
+          <motion.div
+            ref={ref6}
+            initial={{ opacity: 0, x: -100 }}
+            animate={
+              isVisible6 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
+            }
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]"
+          >
             <div className="w-full bg-[#F3F3F3] h-1/3 items-center">
               <img src={TUPCareLogo} className="w-1/2 h-full mx-auto" />
             </div>
@@ -262,15 +349,21 @@ const HeroSection = () => {
                 TUP-Manila
               </span>
             </div>
-          </div>
-          <div className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]">
+          </motion.div>
+          <motion.div
+            ref={ref7}
+            initial={{ opacity: 0, x: 100 }}
+            animate={isVisible7 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]"
+          >
             <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
               <img src={TUPCareDekstopSize} className="h-full w-full" />
             </div>
             <div className="h-full w-1/3 bg-red-200">
               <img src={TUPCareMobileSize} className="h-full w-full" />
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <hr className=" mt-[8em] mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]" />
