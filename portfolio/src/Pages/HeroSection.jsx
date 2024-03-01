@@ -43,6 +43,10 @@ const HeroSection = () => {
   const [isVisible8, setIsVisible8] = useState(false);
   const [isVisible9, setIsVisible9] = useState(false);
 
+  const [isVisible10, setIsVisible10] = useState(false);
+  const [isVisible11, setIsVisible11] = useState(false);
+  const [isVisible12, setIsVisible12] = useState(false);
+
   const { ref: ref1, inView: inView1 } = useInView();
   const { ref: ref2, inView: inView2 } = useInView();
   const { ref: ref3, inView: inView3 } = useInView();
@@ -54,6 +58,10 @@ const HeroSection = () => {
   const { ref: ref7, inView: inView7 } = useInView();
   const { ref: ref8, inView: inView8 } = useInView();
   const { ref: ref9, inView: inView9 } = useInView();
+
+  const { ref: ref10, inView: inView10 } = useInView();
+  const { ref: ref11, inView: inView11 } = useInView();
+  const { ref: ref12, inView: inView12 } = useInView();
 
   useEffect(() => {
     if (inView1) {
@@ -108,6 +116,24 @@ const HeroSection = () => {
       setIsVisible9(true);
     }
   }, [inView9]);
+
+  useEffect(() => {
+    if (inView10) {
+      setIsVisible10(true);
+    }
+  }, [inView10]);
+
+  useEffect(() => {
+    if (inView11) {
+      setIsVisible11(true);
+    }
+  }, [inView11]);
+
+  useEffect(() => {
+    if (inView12) {
+      setIsVisible12(true);
+    }
+  }, [inView12]);
 
   return (
     <section className="w-full h-auto bg-[#fff] pt-[5em] overflow-y-scroll no-scrollbar">
@@ -233,7 +259,7 @@ const HeroSection = () => {
             animate={
               isVisible4 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
             }
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.0 }}
             className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]"
           >
             <div className="w-full bg-[#F3F3F3] h-1/3 items-center">
@@ -260,7 +286,7 @@ const HeroSection = () => {
             ref={ref5}
             initial={{ opacity: 0, x: 100 }}
             animate={isVisible5 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.0 }}
             className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]"
           >
             <div className="h-full w-2/3 md:w-full bg-red-700 mr-[2em]">
@@ -280,7 +306,7 @@ const HeroSection = () => {
             animate={
               isVisible6 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
             }
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]"
           >
             <div className="w-full bg-[#fcbc7e] h-1/3 items-center">
@@ -305,7 +331,7 @@ const HeroSection = () => {
             ref={ref7}
             initial={{ opacity: 0, x: 100 }}
             animate={isVisible7 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]"
           >
             <div className="h-full w-1/3 mx-[.5em] bg-red-200">
@@ -323,10 +349,10 @@ const HeroSection = () => {
         {/* 3rd featured work */}
         <div className="h-[60vh] py-[1em] px-[1em] flex mx-[2em] md:mx-[4em] lg:mx-[5em] 2xl:mx-[5em]">
           <motion.div
-            ref={ref6}
+            ref={ref8}
             initial={{ opacity: 0, x: -100 }}
             animate={
-              isVisible6 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
+              isVisible8 ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
             }
             transition={{ duration: 0.5, delay: 0.4 }}
             className="w-full md:w-full lg:w-1/4 xl:w-1/4 2xl:w-1/4 h-full mr-[1.5em]"
@@ -351,9 +377,9 @@ const HeroSection = () => {
             </div>
           </motion.div>
           <motion.div
-            ref={ref7}
+            ref={ref9}
             initial={{ opacity: 0, x: 100 }}
-            animate={isVisible7 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
+            animate={isVisible9 ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="hidden md:hidden lg:flex xl:flex 2xl:flex md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 h-full bg-[#F3F3F3] p-[1.5em]"
           >
@@ -373,10 +399,22 @@ const HeroSection = () => {
           </h2>
 
           <div className="text-center py-10">
-            <div className="flex flex-wrap justify-center gap-8 ">
+            <div className="flex flex-wrap justify-center gap-8">
               {data.map((item, index) => (
-                <div
+                <motion.div
                   key={index}
+                  ref={index === 0 ? ref10 : index === 1 ? ref11 : ref12}
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={
+                    index === 0 && isVisible10
+                      ? { opacity: 1, x: 0 }
+                      : index === 1 && isVisible11
+                      ? { opacity: 1, x: 0 }
+                      : index === 2 && isVisible12
+                      ? { opacity: 1, x: 0 }
+                      : { opacity: 0, x: -100 }
+                  }
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
                   className="max-w-sm p-8 rounded-xl bg-[#F3F3F3]"
                 >
                   <img
@@ -388,7 +426,7 @@ const HeroSection = () => {
                         : TestimonialClarise
                     }
                     alt={`image ${index}`}
-                    className="h-20 mx-auto bg-red-600 rounded-full "
+                    className="h-20 mx-auto bg-red-600 rounded-full"
                   />
                   <h4 className="uppercase text-xl font-bold mt-2">
                     {item.name}
@@ -396,7 +434,7 @@ const HeroSection = () => {
                   <p className="text-md leading-7 my-3 font-light">
                     {item.description}
                   </p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
