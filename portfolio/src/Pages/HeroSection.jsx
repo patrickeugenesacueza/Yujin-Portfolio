@@ -31,6 +31,7 @@ import Footer from "../Components/Footer.jsx";
 import { useInView } from "react-intersection-observer";
 
 const HeroSection = () => {
+ 
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
