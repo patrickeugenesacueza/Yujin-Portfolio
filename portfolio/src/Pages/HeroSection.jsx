@@ -268,7 +268,7 @@ const HeroSection = () => {
               <img src={ClrsIcon} className="w-1/2 h-full mx-auto" />
             </div>
             <div>
-              <Link to="/Projects/ClrsProject">
+              <Link to="/Projects/ClrsProject"  onClick={() => window.scrollTo(0, 0)}>
                 <div className="flex items-center cursor-pointer">
                   <FontAwesomeIcon
                     icon={faChevronRight}
@@ -318,7 +318,7 @@ const HeroSection = () => {
               <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
             </div>
             <div>
-              <Link to="/Projects/JprogProject">
+              <Link to="/Projects/JprogProject" onClick={() => window.scrollTo(0, 0)}>
                 <div className="flex items-center cursor-pointer">
                   <FontAwesomeIcon
                     icon={faChevronRight}
@@ -371,7 +371,7 @@ const HeroSection = () => {
               <img src={TUPCareLogo} className="w-1/2 h-full mx-auto" />
             </div>
             <div>
-              <Link to="/Projects/TUPCare">
+              <Link to="/Projects/TUPCare"  onClick={() => window.scrollTo(0, 0)}>
                 <div className="flex items-center cursor-pointer">
                   <FontAwesomeIcon
                     icon={faChevronRight}
