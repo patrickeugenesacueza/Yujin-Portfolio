@@ -25,6 +25,9 @@ export default function Form() {
     emailjs
       .send(serviceId, templateId, templateParams, userId)
       .then((response) => {
+        setName("");
+        setEmail("");
+        setMessage("");
         console.log("Email sent successfully:", response);
         // Optionally, you can show a success message to the user or reset the form here
       })
@@ -42,25 +45,35 @@ export default function Form() {
             <h1 className="font-medium text-lg text-center">About You</h1>
           </div>
           <div className="mt-5">
-            <label className="font-[300] text-[1.2em]">Name*</label>
+            <label className="font-[300] text-[1.2em]">
+              Name
+              <span className="text-red-500">*</span>
+            </label>
+
             <input
               className="w-full h-[5vh] mb-5 border-[1.5px] border-black"
               placeholder=" eg, Patrick Eugene Sacueza"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
-            <label className="font-[300] text-[1.2em]">Email*</label>
+            <label className="font-[300] text-[1.2em]" >
+              Email
+              <span className="text-red-500">*</span>
+            </label>
             <input
               className="w-full h-[5vh] mb-5 border-[1.5px] border-black"
               placeholder=" sample@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <textarea
               className="w-full h-[30vh] mb-5 border-[1.5px] border-black"
               placeholder=" Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             />
             <button
               className="py-2 px-4 bg-slate-900 text-[1em] md:text-[2em] lg:text-[2em] xl:text-[2em] 2xl:text-[2em] mt-5"
