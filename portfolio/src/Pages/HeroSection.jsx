@@ -30,8 +30,9 @@ import Footer from "../Components/Footer.jsx";
 
 import { useInView } from "react-intersection-observer";
 
+import { Link } from "react-router-dom";
+
 const HeroSection = () => {
- 
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
@@ -267,15 +268,18 @@ const HeroSection = () => {
               <img src={ClrsIcon} className="w-1/2 h-full mx-auto" />
             </div>
             <div>
-              <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className="mr-2 text-[#861f9e]"
-                />
-                <h1 className="text-[2rem] text-[#861f9e]">
-                  Clarise's Portfolio
-                </h1>
-              </div>
+              <Link to="/Projects/ClrsProject">
+                <div className="flex items-center cursor-pointer">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="mr-2 text-[#861f9e]"
+                  />
+                  <h1 className="text-[2rem] text-[#861f9e]">
+                    Clarise's Portfolio
+                  </h1>
+                </div>
+              </Link>
+
               <span className="text-[1.5rem] text-[#333] font-light">
                 I spearheaded the development of Clarise's portfolio utilizing
                 React JS, Tailwind CSS, and EmailJS, alongside various other
@@ -314,13 +318,18 @@ const HeroSection = () => {
               <img src={JProgLogo} className="w-1/2 h-full mx-auto" />
             </div>
             <div>
-              <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className="mr-2 text-[#861f9e]"
-                />
-                <h1 className="text-[2rem] text-[#861f9e]">jProg e-Learning</h1>
-              </div>
+              <Link to="/Projects/JprogProject">
+                <div className="flex items-center cursor-pointer">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="mr-2 text-[#861f9e]"
+                  />
+                  <h1 className="text-[2rem] text-[#861f9e]">
+                    jProg e-Learning
+                  </h1>
+                </div>
+              </Link>
+
               <span className="text-[1.5rem] text-[#333] font-light">
                 I developed the jProg e-Learning platform using Android Studio
                 and Java, incorporating Firebase as the database backend.
@@ -362,13 +371,15 @@ const HeroSection = () => {
               <img src={TUPCareLogo} className="w-1/2 h-full mx-auto" />
             </div>
             <div>
-              <div className="flex items-center">
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className="mr-2 text-[#bd3f3f]"
-                />
-                <h1 className="text-[2rem] text-[#bd3f3f]">TUPCare</h1>
-              </div>
+              <Link to="/Projects/TUPCare">
+                <div className="flex items-center cursor-pointer">
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="mr-2 text-[#bd3f3f]"
+                  />
+                  <h1 className="text-[2rem] text-[#bd3f3f]">TUPCare</h1>
+                </div>
+              </Link>
               <span className="text-[1.5rem] text-[#333] font-light">
                 Our capstone thesis, TUPCare, entails the development of a
                 monitoring web application designed to oversee temperature
