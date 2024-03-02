@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const notify = () => toast.success('Email sent successfully');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,6 +33,7 @@ export default function Form() {
         setEmail("");
         setMessage("");
         setLoading(false); 
+        notify();
         console.log("Email sent successfully:", response);
         
       })
@@ -98,6 +101,7 @@ export default function Form() {
                 </div>
               )}
             </button>
+            <Toaster />
           </div>
         </form>
       </div>
