@@ -7,8 +7,11 @@ export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading to true when the form is being submitted
 
     const serviceId = "service_3fqy6p6"; // Replace with your actual service ID
     const templateId = "template_6erfg3y"; // Replace with your actual template ID
@@ -28,10 +31,12 @@ export default function Form() {
         setName("");
         setEmail("");
         setMessage("");
+        setLoading(false); // Set loading back to false once the email is sent
         console.log("Email sent successfully:", response);
         // Optionally, you can show a success message to the user or reset the form here
       })
       .catch((error) => {
+        setLoading(false); // Set loading back to false in case of an error
         console.error("Error sending email:", error);
         // Optionally, you can show an error message to the user here
       });
@@ -57,7 +62,7 @@ export default function Form() {
               onChange={(e) => setName(e.target.value)}
               required
             />
-            <label className="font-[300] text-[1.2em]" >
+            <label className="font-[300] text-[1.2em]">
               Email
               <span className="text-red-500">*</span>
             </label>
@@ -78,17 +83,22 @@ export default function Form() {
             <button
               className="py-2 px-4 bg-slate-900 text-[1em] md:text-[2em] lg:text-[2em] xl:text-[2em] 2xl:text-[2em] mt-5"
               type="submit"
+              disabled={loading}
             >
-              {" "}
-              <div className="flex items-center">
-                <h1 className="text-[1em] md:text-[1em] lg:text-[1em] xl:text-[1em] 2xl:text-[1em] text-white">
-                  Send
-                </h1>
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className="ml-2 text-white"
-                />
-              </div>
+              {loading ? (
+                <div className="flex items-center">
+                  <div className="w-6 h-6 border-b-2 border-t-[3px] border-gray-200 rounded-full border-solid animate-spin mr-2"></div>
+                  <span className="text-white">Sending...</span>
+                </div>
+              ) : (
+                <div className="flex items-center">
+                  <span className="text-white">Submit</span>
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className="ml-2 text-white"
+                  />
+                </div>
+              )}
             </button>
           </div>
         </form>
