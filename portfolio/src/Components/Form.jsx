@@ -2,22 +2,22 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const notify = () => toast.success('Email sent successfully');
+  const notify = () => toast.success("Email sent successfully");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true); 
+    setLoading(true);
 
-    const serviceId = "service_3fqy6p6"; 
-    const templateId = "template_6erfg3y"; 
-    const userId = "41PNfGld-WKVPgp3j"; 
+    const serviceId = "service_3fqy6p6";
+    const templateId = "template_6erfg3y";
+    const userId = "41PNfGld-WKVPgp3j";
 
     const templateParams = {
       from_name: name,
@@ -32,13 +32,12 @@ export default function Form() {
         setName("");
         setEmail("");
         setMessage("");
-        setLoading(false); 
+        setLoading(false);
         notify();
         console.log("Email sent successfully:", response);
-        
       })
       .catch((error) => {
-        setLoading(false); 
+        setLoading(false);
         console.error("Error sending email:", error);
       });
   };
@@ -101,7 +100,7 @@ export default function Form() {
                 </div>
               )}
             </button>
-            <Toaster />
+            <Toaster position="bottom-center" reverseOrder={false} />
           </div>
         </form>
       </div>
