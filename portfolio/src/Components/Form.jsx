@@ -11,11 +11,11 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true when the form is being submitted
+    setLoading(true); 
 
-    const serviceId = "service_3fqy6p6"; // Replace with your actual service ID
-    const templateId = "template_6erfg3y"; // Replace with your actual template ID
-    const userId = "41PNfGld-WKVPgp3j"; // Replace with your actual user ID
+    const serviceId = "service_3fqy6p6"; 
+    const templateId = "template_6erfg3y"; 
+    const userId = "41PNfGld-WKVPgp3j"; 
 
     const templateParams = {
       from_name: name,
@@ -24,21 +24,19 @@ export default function Form() {
       message: message,
     };
 
-    // Send email using EmailJS
     emailjs
       .send(serviceId, templateId, templateParams, userId)
       .then((response) => {
         setName("");
         setEmail("");
         setMessage("");
-        setLoading(false); // Set loading back to false once the email is sent
+        setLoading(false); 
         console.log("Email sent successfully:", response);
-        // Optionally, you can show a success message to the user or reset the form here
+        
       })
       .catch((error) => {
-        setLoading(false); // Set loading back to false in case of an error
+        setLoading(false); 
         console.error("Error sending email:", error);
-        // Optionally, you can show an error message to the user here
       });
   };
 

@@ -25,32 +25,37 @@ export default function PPABio() {
                 Timeframe
               </h1>
               <ul className="list-disc text-justify ml-4 mt-1">
-                <li>June 2023</li>
-                <span className="font-sm font-thin">
-                  As of June 2023, our focus is on developing the user interface
-                  for the Case Tracking System, followed by presenting potential
-                  features to the officers for their input and feedback.
-                </span>
                 <li>July 2023</li>
                 <span className="font-sm font-thin">
-                  As of July 2023, the system development phase has concluded,
-                  and we have transitioned into the debugging phase, where we
-                  meticulously identify and resolve any technical issues or
-                  errors to ensure the system's smooth operation and
-                  reliability.
+                  As of July 2023, the interview with the Management Specialist
+                  II aimed to understand the sole purpose of the PPABio system,
+                  which is to streamline biometric data management within the
+                  PPA framework, ensuring accuracy, security, and efficiency in
+                  handling personnel information.
+                </span>
+                <li>August 2023</li>
+                <span className="font-sm font-thin">
+                  As of August 2023, the PPABio system has been successfully
+                  deployed, albeit with some initial bugs that required
+                  attention. However, the development team promptly addressed
+                  these issues, ensuring that the system is now functioning
+                  smoothly. Ongoing maintenance efforts are in place to uphold
+                  system integrity and address any future issues that may arise,
+                  ensuring continuous optimal performance.
                 </span>
               </ul>
             </div>
           </div>
           <div className="w-full lg:w-3/4 h-full bg-white pb-[4em] px-[2em]">
             <h1 className="text-[2.5em] font-[700] text-[Lato] mt-[2em]">
-              Case Tracking System
+              PPABio
             </h1>
             <p className="text-[1.5em] font-thin">
-              As one of the developer of the Case Tracking System for the Port
-              Police Division, my role involves designing intuitive user
-              interfaces and implementing robust backend functionalities to
-              streamline case management processes.
+              As one of the developers of the PPABio system for the PPA Admin,
+              our primary focus is on enhancing user experience through
+              intuitive interfaces and robust functionalities, ensuring seamless
+              management of biometric data for administrative purposes within
+              the PPA.
             </p>
             <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-full h-[auto] bg-[#F3F3F3] p-[1.5em] mt-[1em]">
               <div className="h-full w-full md:w-full">
