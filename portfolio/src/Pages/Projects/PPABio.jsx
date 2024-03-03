@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../Components/Footer";
 import Biometrics from "../../assets/Biometrics.png";
-import BiometricsCDN from "https://www.dropbox.com/scl/fi/6v008rabile58uywcfh97/Biometrics.png?rlkey=s1r7ljkj7bnyygp42od5885hk&dl=0";
+// import BiometricsCDN from "https://www.dropbox.com/scl/fi/6v008rabile58uywcfh97/Biometrics.png?rlkey=s1r7ljkj7bnyygp42od5885hk&dl=0";
 
 export default function PPABio() {
   return (
@@ -61,7 +61,7 @@ export default function PPABio() {
             <div className="lg:flex xl:flex 2xl:flex md:w-full lg:w-full xl:w-full 2xl:w-full h-[auto] bg-[#F3F3F3] p-[1.5em] mt-[1em]">
               <div className="h-full w-full md:w-full">
                 <img
-                  src={BiometricsCDN}
+                  src={Biometrics}
                   className="h-full w-full object-cover"
                   alt="Desktop Size"
                 />
