@@ -13,11 +13,6 @@ import {
 import SocialMediaDetails from "../data/SocialMedia.json";
 import NavDetails from "../data/NavDetails.json";
 
-import About from "../Pages/About";
-// import Contact from "../Pages/Contact";
-// import Experience from "../Pages/Experience";
-// import Portfolio from "../Pages/Portfolio";
-
 export default function Footer() {
   return (
     <>
@@ -45,12 +40,14 @@ export default function Footer() {
           </div>
           <div className="my-6">
             <h1>Aspiring Successful IT </h1>
-            <div className="flex items-center cursor-pointer">
-              <p className="font-bold text-[1em]">
-                AVAILABLE APRIL 2024. HIRE NOW
-              </p>
-              <FontAwesomeIcon icon={faChevronRight} className="ml-2" />
-            </div>
+            <Link to="/Contacts" onClick={() => window.scrollTo(0, 0)}>
+              <div className="flex items-center cursor-pointer">
+                <p className="font-bold text-[1em]">
+                  AVAILABLE APRIL 2024. HIRE NOW
+                </p>
+                <FontAwesomeIcon icon={faChevronRight} className="ml-2" />
+              </div>
+            </Link>
           </div>
         </div>
         <div className="h-[40vh] md:h-full lg:h-full xl:h-full 2xl:h-full w-full md:w-1/4 lg:w-1/4 xl:w-1/4 2xl:w-1/4 text-left md:text-right md:px-[2em]">
@@ -64,6 +61,8 @@ export default function Footer() {
                     ? "https://github.com/patrickeugenesacueza"
                     : "https://www.linkedin.com/in/patrick-eugene-sacueza-18633826a/"
                 }
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="flex justify-start md:justify-end">
                   <FontAwesomeIcon
