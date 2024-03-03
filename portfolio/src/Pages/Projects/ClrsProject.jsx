@@ -45,7 +45,7 @@ export default function ClrsProject() {
           <h1 className="text-[2.5em] font-[700] text-[Lato] mt-[2em]">
             Clarise's Portfolio
           </h1>
-          <p className="text-[1.5em] font-thin">
+          <p className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] font-thin">
             I had the honor of crafting Ma'am Clarise's Portfolio, an
             exhilarating journey that allowed me to showcase her work
             effectively. Developing Ma'am Clarise's Portfolio was an exciting

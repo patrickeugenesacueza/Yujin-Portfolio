@@ -51,7 +51,7 @@ export default function TrackingSystem() {
             <h1 className="text-[2.5em] font-[700] text-[Lato] mt-[2em]">
               Case Tracking System
             </h1>
-            <p className="text-[1.5em] font-thin">
+            <p className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] font-thin">
               As one of the developer of the Case Tracking System for the Port
               Police Division, my role involves designing intuitive user
               interfaces and implementing robust backend functionalities to

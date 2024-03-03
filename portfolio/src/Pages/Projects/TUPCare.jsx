@@ -49,7 +49,7 @@ export default function TUPCare() {
           <h1 className="text-[2.5em] font-[700] text-[Lato] mt-[2em]">
             TUPCare
           </h1>
-          <p className="text-[1.5em] font-thin">
+          <p className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] font-thin">
             TUPCare is your all-in-one solution for comprehensive hardware
             monitoring, seamlessly integrating face mask and alcohol dispensers
             alongside a student temperature scanner. Experience peace of mind
