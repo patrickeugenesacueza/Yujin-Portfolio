@@ -142,7 +142,7 @@ export default function Projects() {
   }, [inView12]);
   return (
     <>
-      <section className="w-full h-auto bg-[#fff] overflow-y-scroll no-scrollbar">
+      <section className="w-full h-auto bg-[#fff] overflow-y-auto">
         <div className="py-[2em]">
           <h2 className="text-center text-[2.5em] font-[900] text-[#333] font-[lato]">
             Projects
