@@ -177,7 +177,7 @@ export default function Projects() {
                     </h1>
                   </div>
                 </Link>
-                <span className="text-[1.3rem] text-[#333] font-light">
+                <span className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] text-[#333] font-light">
                   I spearheaded the development of Clarise's portfolio utilizing
                   React JS, Tailwind CSS, and EmailJS, alongside various other
                   React packages
@@ -231,7 +231,7 @@ export default function Projects() {
                     </h1>
                   </div>
                 </Link>
-                <span className="text-[1.3rem] text-[#333] font-light">
+                <span className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] text-[#333] font-light">
                   I developed the jProg e-Learning platform using Android Studio
                   and Java, incorporating Firebase as the database backend.
                 </span>
@@ -285,7 +285,7 @@ export default function Projects() {
                     <h1 className="text-[2rem] text-[#bd3f3f]">TUPCare</h1>
                   </div>
                 </Link>
-                <span className="text-[1.3rem] text-[#333] font-light">
+                <span className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] text-[#333] font-light">
                   Our capstone thesis, TUPCare, entails the development of a
                   monitoring web application designed to oversee temperature
                   scanners, face mask dispensers, and alcohol dispensers within
@@ -340,7 +340,7 @@ export default function Projects() {
                     </h1>
                   </div>
                 </Link>
-                <span className="text-[1.3rem] text-[#333] font-light">
+                <span className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] text-[#333] font-light">
                   The case tracking system implemented by the Port Police
                   Division ensures efficient management of maritime incidents,
                   providing real-time updates and comprehensive data analysis.
@@ -389,7 +389,7 @@ export default function Projects() {
                     <h1 className="text-[2rem] text-[#861f9e]">PPABio</h1>
                   </div>
                 </Link>
-                <span className="text-[1.3rem] text-[#333] font-light">
+                <span className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] text-[#333] font-light">
                   PPABio is a specialized tool designed for seamless streaming
                   of .dat files from biometric devices. It serves as an
                   automation solution, simplifying the extraction of daily time
