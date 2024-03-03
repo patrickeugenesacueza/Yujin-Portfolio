@@ -50,7 +50,7 @@ export default function PPABio() {
             <h1 className="text-[2.5em] font-[700] text-[Lato] mt-[2em]">
               PPABio
             </h1>
-            <p className="text-[1.5em] font-thin">
+            <p className="text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] xl:text-[1.3rem] 2xl:text-[1.3rem] font-thin">
               As one of the developers of the PPABio system for the PPA Admin,
               our primary focus is on enhancing user experience through
               intuitive interfaces and robust functionalities, ensuring seamless
