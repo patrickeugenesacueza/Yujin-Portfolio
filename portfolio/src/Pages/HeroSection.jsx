@@ -138,7 +138,7 @@ const HeroSection = () => {
   }, [inView12]);
 
   return (
-    <section className="w-full h-auto bg-[#fff] pt-[5em] overflow-y-scroll no-scrollbar">
+    <section className="w-full h-auto bg-[#fff] pt-[5em] overflow-y-auto">
       <div className="text-center block">
         <TypeAnimation
           sequence={[
