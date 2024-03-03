@@ -14,21 +14,60 @@ const Nav = () => {
       <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900">
         <ul className="text-center text-xl p-20">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="/" onClick={() => { closeMenu(); window.scrollTo(0, 0); }}>Home</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                closeMenu();
+                window.scrollTo(0, 0);
+              }}
+            >
+              Home
+            </Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="/About" element={<About />} onClick={() => { closeMenu(); window.scrollTo(0, 0); }}>
+            <Link
+              to="/About"
+              element={<About />}
+              onClick={() => {
+                closeMenu();
+                window.scrollTo(0, 0);
+              }}
+            >
               About
             </Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="/Projects" onClick={() => { closeMenu(); window.scrollTo(0, 0); }}>Projects</Link>
+            <Link
+              to="/Projects"
+              onClick={() => {
+                closeMenu();
+                window.scrollTo(0, 0);
+              }}
+            >
+              Projects
+            </Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="/Experience" onClick={() => { closeMenu(); window.scrollTo(0, 0); }}>Experience</Link>
+            <Link
+              to="/Experience"
+              onClick={() => {
+                closeMenu();
+                window.scrollTo(0, 0);
+              }}
+            >
+              Experience
+            </Link>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            <Link to="/Contacts" onClick={() => { closeMenu(); window.scrollTo(0, 0); }}>Contacts</Link>
+            <Link
+              to="/Contacts"
+              onClick={() => {
+                closeMenu();
+                window.scrollTo(0, 0);
+              }}
+            >
+              Contacts
+            </Link>
           </li>
         </ul>
       </div>
@@ -45,21 +84,33 @@ const Nav = () => {
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px]">
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+                  Home
+                </Link>
               </li>
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
-                <Link to="/About" element={<About />}>
+                <Link
+                  to="/About"
+                  element={<About />}
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   About
                 </Link>
               </li>
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
-                <Link to="/Projects">Projects</Link>
+                <Link to="/Projects" onClick={() => window.scrollTo(0, 0)}>
+                  Projects
+                </Link>
               </li>
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
-                <Link to="/Experience">Experience</Link>
+                <Link to="/Experience" onClick={() => window.scrollTo(0, 0)}>
+                  Experience
+                </Link>
               </li>
               <li className="relative after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
-                <Link to="/Contacts">Contacts</Link>
+                <Link to="/Contacts" onClick={() => window.scrollTo(0, 0)}>
+                  Contacts
+                </Link>
               </li>
             </ul>
           </div>
