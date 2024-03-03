@@ -88,7 +88,6 @@ export default function Footer() {
         <div className="h-full w-1/4 hidden md:block text-left md:text-left md:px-[2em]">
           {NavDetails.map((item, index) => (
             <div key={index}>
-              {/* Use Link component instead of h1 */}
               <Link
                 to={`/${item.nav.toLowerCase()}`}
                 onClick={() => window.scrollTo(0, 0)}
