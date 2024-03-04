@@ -31,7 +31,6 @@ const App = () => {
         <Route exact path="/Projects/TUPCare" element={<TUPCare/>}/>
         <Route exact path="/Projects/TrackingSystem" element={<TrackingSystem/>}/>
         <Route exact path="/Projects/PPABio" element={<PPABio/>}/>
-
       </Routes>
     </div>
   );
