@@ -54,7 +54,7 @@ export default function About() {
                 Working with computer is my passion.
               </p>
               <Link to="/Techstack" onClick={() => window.scrollTo(0, 0)}>
-                <div className="flex items-center mt-5 underline cursor-pointer">
+                <div className="flex items-center my-5 underline cursor-pointer">
                   <FontAwesomeIcon
                     icon={faChevronRight}
                     className="mr-2 text-[#333]"
