@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="bg-slate-900">
       <Nav />
-      <Routes>
+      <Routes basename="/portfolio">
         <Route exact path="/" element={<HeroSection />} />
         <Route exact path="/About" element={<About/>} />
         <Route exact path="/Projects" element={<Project/>} />
