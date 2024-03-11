@@ -56,7 +56,7 @@ export default function Form() {
             </label>
 
             <input
-              className="w-full h-[5vh] mb-5 border-[1.5px] border-black"
+              className="w-full h-[5vh] mb-5 border-[1.5px] border-black px-2"
               placeholder=" eg, Patrick Eugene Sacueza"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -67,14 +67,14 @@ export default function Form() {
               <span className="text-red-500">*</span>
             </label>
             <input
-              className="w-full h-[5vh] mb-5 border-[1.5px] border-black"
+              className="w-full h-[5vh] mb-5 border-[1.5px] border-black px-2"
               placeholder=" sample@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
             <textarea
-              className="w-full h-[30vh] mb-5 border-[1.5px] border-black"
+              className="w-full h-[30vh] mb-5 border-[1.5px] border-black px-2"
               placeholder=" Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
