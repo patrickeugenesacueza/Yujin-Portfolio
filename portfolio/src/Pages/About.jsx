@@ -28,7 +28,7 @@ export default function About() {
             </h1>
             <div className="text-justify w-full lg:w-1/2 h-full mx-auto px-[1em]">
               <h3 className="text-justify mt-5 font-[Lato] font-[200] text-[1em] md:text-[1.5em] lg:text-[1.5em] text-[#333]">
-                Born in 2000. Raised in a small town in Philippines. Been hard
+                Born in 2000. Raised in Pasay City, Philippines. Been hard
                 at work since 2019
               </h3>
               <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
