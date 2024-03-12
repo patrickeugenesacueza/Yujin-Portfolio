@@ -34,8 +34,7 @@ export default function About() {
               <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
                 My name is Patrick Eugene B. Sacueza, and I'm on a path towards
                 success in the field of IT. Presently, I serve as an IT Desktop
-                Support Engineer (FIDCO), leveraging a decade of experience in
-                providing technical assistance and support to users across
+                Support Engineer (FIDCO),providing technical assistance and support to users across
                 diverse industries.
               </p>
               <p className="text-justify mt-5 font-[Lato] text-[1em] md:text-[1.2em] lg:text-[1.2em] text-[#333]">
