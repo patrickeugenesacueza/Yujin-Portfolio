@@ -1,8 +1,8 @@
 {
-    "FE": ["HTML5", "CSS3", "Bootstrap", "Javascript","jQuery","AJAX","ReactJS","TailwindCSS","MaterialUI","Shadcn"],
-    "BE": ["PHP","Firebase", "Java","Python","C"],
-    "DB": ["mySQL","noSQL"],
-    "VC": ["githubDesktop"],
+    "Front-end": ["HTML5", "CSS3", "Bootstrap", "Javascript","jQuery","AJAX","ReactJS","TailwindCSS","MaterialUI","Shadcn"],
+    "Back-end": ["PHP","Firebase", "Java","Python","C"],
+    "Database": ["mySQL","noSQL"],
+    "Vision Control": ["githubDesktop"],
     "IDE": ["AndroidStudio","VSCode"],
-    "TS": ["ReactJS","TailwindCSS","EmailJS","FramerMotion"]
+    "Technical Support": ["Formatting OS","Software Troubleshoot","Hardware Troubleshoot","Network Connection Troubleshoot", "Active Directory Management", "Email Support", "Remote Support"]
 }
