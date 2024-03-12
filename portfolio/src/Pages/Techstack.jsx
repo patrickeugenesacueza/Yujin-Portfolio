@@ -91,7 +91,7 @@ export default function Techstack() {
               {TS[selectedField].map((tech, index) => (
                 <motion.div
                   key={index}
-                  className={`w-full h-10vh sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 bg-[#F3F3F3] p-2 md:p-10 lg:p-10 xl:p-10 2xl:p-10 ${
+                  className={`w-full h-20 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 bg-[#F3F3F3] p-2 md:p-10 lg:p-10 xl:p-10 2xl:p-10 ${
                     selectedField === "Technical Support"
                       ? "col-span-1 w-full"
                       : ""
