@@ -1,0 +1,8 @@
+{
+    "FE": ["HTML5", "CSS3", "Bootstrap", "Javascript","jQuery","AJAX","ReactJS","TailwindCSS","MaterialUI","Shadcn"],
+    "BE": ["PHP","Firebase", "Java","Python","C"],
+    "DB": ["mySQL","noSQL"],
+    "VC": ["githubDesktop"],
+    "IDE": ["AndroidStudio","VSCode"],
+    "TS": ["ReactJS","TailwindCSS","EmailJS","FramerMotion"]
+}
