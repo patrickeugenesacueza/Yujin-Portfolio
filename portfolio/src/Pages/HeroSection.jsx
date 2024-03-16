@@ -16,6 +16,7 @@ import JProgSecondPicture from "../assets/JE2.png";
 import JProgThirdPicture from "../assets/JE3.png";
 import TestimonialClarise from "../assets/testimonialClarise.jpg";
 import TestimonialCocoy from "../assets/testimonialCocoy.jpg";
+import TestimonialHarrold from "../assets/harrold.jpg";
 
 import TUPCareDekstopSize from "../assets/TUPCareDesktopSize.png";
 import TUPCareMobileSize from "../assets/TUPCareMobileSize.png";
@@ -435,7 +436,7 @@ const HeroSection = () => {
                         ? TestimonialClarise
                         : item.name === "Cocoy Avila"
                         ? TestimonialCocoy
-                        : TestimonialClarise
+                        : TestimonialHarrold  
                     }
                     alt={`image ${index}`}
                     className="h-20 mx-auto bg-red-600 rounded-full"
