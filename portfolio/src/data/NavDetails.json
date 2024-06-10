@@ -1,0 +1,18 @@
+[
+    {
+        "nav":"About",
+        "description": "Learn more about Eugene"
+    },
+    {
+        "nav":"Projects",
+        "description": "View Eugene's previous projects"
+    },
+    {
+        "nav":"Experience",
+        "description": "View Eugene's previous work experience"
+    },
+    {
+        "nav":"Contacts",
+        "description": "Send an Email"
+    }
+]

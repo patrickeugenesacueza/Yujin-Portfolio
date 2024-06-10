@@ -1,0 +1,8 @@
+{
+    "Front-end": ["HTML5", "CSS3", "Bootstrap", "Javascript","jQuery","AJAX","ReactJS","TailwindCSS","MaterialUI","Shadcn"],
+    "Back-end": ["PHP","Firebase", "Java","Python","C"],
+    "Database": ["mySQL","noSQL"],
+    "Vision Control": ["githubDesktop"],
+    "IDE": ["AndroidStudio","VSCode"],
+    "Technical Support": ["Formatting OS","Software Troubleshoot","Hardware Troubleshoot","Network Connection Troubleshoot", "Active Directory Management", "Email Support", "Remote Support"]
+}
